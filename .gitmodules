@@ -1,3 +1,6 @@
 [submodule "ofxCocoaPlugins"]
 	path = ofxCocoaPlugins
 	url = git@github.com:HalfdanJ/ofxCocoaPlugins.git
+[submodule "Addons/MSA"]
+	path = Addons/MSA
+	url = https://github.com/memo/msalibs.git
