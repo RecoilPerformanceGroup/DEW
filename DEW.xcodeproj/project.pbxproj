@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		845FB20D1520A77400FAB093 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845FB20C1520A77400FAB093 /* OpenGL.framework */; };
 		845FB20F1520AB7800FAB093 /* ofxCocoaPlugins.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */; };
+		8483C66D1521C0FB006090CF /* Fluids.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8483C66B1521C0FB006090CF /* Fluids.mm */; };
+		8483C66E1521C0FB006090CF /* Fluids.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C66C1521C0FB006090CF /* Fluids.xib */; };
 		84AFDC0815209A0A00DB5DEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFDC0715209A0A00DB5DEF /* Cocoa.framework */; };
 		84AFDC1215209A0A00DB5DEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC1015209A0A00DB5DEF /* InfoPlist.strings */; };
 		84AFDC1415209A0A00DB5DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFDC1315209A0A00DB5DEF /* main.m */; };
@@ -33,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		845FB20C1520A77400FAB093 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8483C66A1521C0FB006090CF /* Fluids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fluids.h; sourceTree = "<group>"; };
+		8483C66B1521C0FB006090CF /* Fluids.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Fluids.mm; sourceTree = "<group>"; };
+		8483C66C1521C0FB006090CF /* Fluids.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Fluids.xib; sourceTree = "<group>"; };
 		84AFDC0315209A0A00DB5DEF /* DEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AFDC0715209A0A00DB5DEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		84AFDC0A15209A0A00DB5DEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,12 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8483C6691521C0E5006090CF /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				8483C66A1521C0FB006090CF /* Fluids.h */,
+				8483C66B1521C0FB006090CF /* Fluids.mm */,
+				8483C66C1521C0FB006090CF /* Fluids.xib */,
+			);
+			name = Plugins;
+			path = DEW/Plugins;
+			sourceTree = "<group>";
+		};
 		84AFDBF815209A0A00DB5DEF = {
 			isa = PBXGroup;
 			children = (
-				845FB20C1520A77400FAB093 /* OpenGL.framework */,
-				84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */,
 				84AFDC2C15209B3400DB5DEF /* Project.xcconfig */,
+				8483C6691521C0E5006090CF /* Plugins */,
 				84AFDC0D15209A0A00DB5DEF /* DEW */,
 				84AFDC0615209A0A00DB5DEF /* Frameworks */,
 				84AFDC0415209A0A00DB5DEF /* Products */,
@@ -86,6 +101,8 @@
 		84AFDC0615209A0A00DB5DEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				845FB20C1520A77400FAB093 /* OpenGL.framework */,
+				84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */,
 				84AFDC0715209A0A00DB5DEF /* Cocoa.framework */,
 				84AFDC0915209A0A00DB5DEF /* Other Frameworks */,
 			);
@@ -178,6 +195,7 @@
 				84AFDC1215209A0A00DB5DEF /* InfoPlist.strings in Resources */,
 				84AFDC1E15209A0A00DB5DEF /* MainMenu.xib in Resources */,
 				84AFDC2D15209B3400DB5DEF /* Project.xcconfig in Resources */,
+				8483C66E1521C0FB006090CF /* Fluids.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,7 @@
 			files = (
 				84AFDC1415209A0A00DB5DEF /* main.m in Sources */,
 				84AFDC1B15209A0A00DB5DEF /* AppDelegate.mm in Sources */,
+				8483C66D1521C0FB006090CF /* Fluids.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
