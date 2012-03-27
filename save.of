@@ -29,7 +29,7 @@
 			</dict>
 			<key>NS.data</key>
 			<data>
-			AAA=
+			AQA=
 			</data>
 		</dict>
 		<dict>
@@ -519,8 +519,8 @@
 		<string>x</string>
 		<string>y</string>
 		<string>num</string>
-		<real>0.31486344337463379</real>
-		<real>0.76260507106781006</real>
+		<real>0.25183823704719543</real>
+		<real>0.73809522390365601</real>
 		<integer>0</integer>
 		<dict>
 			<key>$class</key>
@@ -928,6 +928,10 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
+					<integer>80</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
 					<integer>9</integer>
 				</dict>
 			</array>
@@ -935,10 +939,58 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>80</integer>
+					<integer>81</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>86</integer>
 				</dict>
 			</array>
 		</dict>
+		<string>controlDrawMode</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>16</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>82</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>85</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>83</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>84</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>65</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<integer>10</integer>
+		<real>0.0</real>
+		<real>3</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -955,7 +1007,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>81</integer>
+				<integer>83</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -968,7 +1020,6 @@
 				<integer>67</integer>
 			</dict>
 		</dict>
-		<integer>10</integer>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -986,7 +1037,7 @@
 		<key>FluidsCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>82</integer>
+			<integer>87</integer>
 		</dict>
 		<key>FluidsEnabled</key>
 		<dict>
