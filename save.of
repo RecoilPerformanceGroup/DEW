@@ -932,22 +932,49 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
+					<integer>81</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>82</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
 					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>83</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>81</integer>
+					<integer>84</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>86</integer>
+					<integer>89</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>94</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>99</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>100</integer>
 				</dict>
 			</array>
 		</dict>
 		<string>controlDrawMode</string>
+		<string>fluidsDeltaT</string>
+		<string>fluidsFadeSpeed</string>
+		<string>fluidsSolverIterations</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -959,17 +986,17 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>82</integer>
+				<integer>85</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>85</integer>
+				<integer>88</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>83</integer>
+				<integer>86</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -979,18 +1006,104 @@
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>84</integer>
+				<integer>87</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>65</integer>
+				<integer>54</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
 		<integer>10</integer>
 		<real>0.0</real>
 		<real>3</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>16</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>91</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>93</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>86</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>92</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>90</integer>
+			</dict>
+		</dict>
+		<real>0.022868217527866365</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>0.10000000000000001</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>16</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>96</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>98</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>86</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>97</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>95</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>0.10000000000000001</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1007,7 +1120,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>83</integer>
+				<integer>86</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -1020,6 +1133,49 @@
 				<integer>67</integer>
 			</dict>
 		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>16</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>102</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>104</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>86</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>103</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>101</integer>
+			</dict>
+		</dict>
+		<real>5</real>
+		<real>0.0</real>
+		<real>1</real>
+		<real>50</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1037,7 +1193,7 @@
 		<key>FluidsCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>87</integer>
+			<integer>105</integer>
 		</dict>
 		<key>FluidsEnabled</key>
 		<dict>

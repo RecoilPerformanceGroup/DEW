@@ -1,9 +1,18 @@
 #import "Fluids.h"
 
 @implementation Fluids
+@synthesize controlMouseColor;
+@synthesize controlMouseColorEnabled;
+@synthesize controlMouseForceEnabled;
+@synthesize controlMouseForce;
 
 -(void)initPlugin{
     [[self addPropF:@"controlDrawMode"] setMinValue:0 maxValue:3];
+    
+    [[self addPropF:@"fluidsDeltaT"] setMinValue:0 maxValue:0.1];
+    [[self addPropF:@"fluidsFadeSpeed"] setMinValue:0 maxValue:0.1];
+    [[self addPropF:@"fluidsSolverIterations"] setMinValue:1 maxValue:50];
+    
 }
 
 //
@@ -13,10 +22,18 @@
 
 -(void)setup{
     fluids = new FluidSolver();
-    fluids->setup();
+    fluids->setup(200,100);
+    fluids->enableRGB(YES);
+
     
     fluidsDrawer = new FluidDrawerGl();
     fluidsDrawer->setup(fluids);
+    
+    lastControlMouse.x = -1;
+
+}
+
+-(void)awakeFromNib{
 }
 
 //
@@ -25,10 +42,16 @@
 
 
 -(void)update:(NSDictionary *)drawingInformation{
+    fluids->setDeltaT(PropF(@"fluidsDeltaT"));
+    fluids->setFadeSpeed(PropF(@"fluidsFadeSpeed"));
+    fluids->setSolverIterations(PropI(@"fluidsSolverIterations"));
     fluids->update();
     
-    Color c(MSA::CM_HSV, ( ofGetElapsedTimeMillis() % 360 ) / 360.0f, 1, 1 );
-    fluids->addColorAtPos(Vec2f(0.5,0.5), c);
+    if([[self controlMouseColorEnabled] state] && lastControlMouse.x != -1){
+        NSColor * color = [[self controlMouseColor] color];
+        Color c(MSA::CM_RGB,  [color redComponent], [color greenComponent], [color blueComponent] );
+        fluids->addColorAtPos(Vec2f([self controlMouseX]/[[self controlGlView] frame].size.width, [self controlMouseY]/[[self controlGlView] frame].size.height), c*[color alphaComponent]*100.0);
+    }
 }
 
 //
@@ -57,7 +80,9 @@
     } else {
         Vec2f _d = pos - lastControlMouse;
         
-        fluids->addForceAtPos(pos, _d);
+        if([[self controlMouseForceEnabled] state]){
+            fluids->addForceAtPos(pos, _d * [[self controlMouseForce] floatValue]);
+        }
         
         lastControlMouse = pos;
     }
