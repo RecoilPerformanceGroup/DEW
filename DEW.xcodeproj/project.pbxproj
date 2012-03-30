@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		845FB20D1520A77400FAB093 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845FB20C1520A77400FAB093 /* OpenGL.framework */; };
-		847E9E6F1524897A00710E6E /* ofxCocoaPlugins.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 847E9E6E1524897A00710E6E /* ofxCocoaPlugins.framework */; };
 		8483C66D1521C0FB006090CF /* Fluids.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8483C66B1521C0FB006090CF /* Fluids.mm */; };
 		8483C66E1521C0FB006090CF /* Fluids.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C66C1521C0FB006090CF /* Fluids.xib */; };
+		84A64CB3152492B3004B2050 /* ofxCocoaPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */; };
+		84A64CB5152492C2004B2050 /* ofxCocoaPlugins.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */; };
 		84AFDC0815209A0A00DB5DEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFDC0715209A0A00DB5DEF /* Cocoa.framework */; };
 		84AFDC1215209A0A00DB5DEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC1015209A0A00DB5DEF /* InfoPlist.strings */; };
 		84AFDC1415209A0A00DB5DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFDC1315209A0A00DB5DEF /* main.m */; };
 		84AFDC1B15209A0A00DB5DEF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84AFDC1A15209A0A00DB5DEF /* AppDelegate.mm */; };
 		84AFDC1E15209A0A00DB5DEF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC1C15209A0A00DB5DEF /* MainMenu.xib */; };
 		84AFDC2D15209B3400DB5DEF /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC2C15209B3400DB5DEF /* Project.xcconfig */; };
-		84AFDC4015209CA800DB5DEF /* ofxCocoaPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */; };
 		84EA1E1F1521C6E600F91FC8 /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EA1BAB1521C6E600F91FC8 /* install.xml */; };
 		84EA1E201521C6E600F91FC8 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EA1BB01521C6E600F91FC8 /* Color.cpp */; };
 		84EA1E211521C6E600F91FC8 /* MSACoreGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EA1BB71521C6E600F91FC8 /* MSACoreGL.cpp */; };
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				847E9E6F1524897A00710E6E /* ofxCocoaPlugins.framework in CopyFiles */,
+				84A64CB5152492C2004B2050 /* ofxCocoaPlugins.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +55,10 @@
 
 /* Begin PBXFileReference section */
 		845FB20C1520A77400FAB093 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		847E9E6E1524897A00710E6E /* ofxCocoaPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ofxCocoaPlugins.framework; path = ofxCocoaPlugins/build/Debug/ofxCocoaPlugins.framework; sourceTree = "<group>"; };
 		8483C66A1521C0FB006090CF /* Fluids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fluids.h; sourceTree = "<group>"; };
 		8483C66B1521C0FB006090CF /* Fluids.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Fluids.mm; sourceTree = "<group>"; };
 		8483C66C1521C0FB006090CF /* Fluids.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Fluids.xib; sourceTree = "<group>"; };
+		84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ofxCocoaPlugins.framework; path = ofxCocoaPlugins/build/Debug/ofxCocoaPlugins.framework; sourceTree = "<group>"; };
 		84AFDC0315209A0A00DB5DEF /* DEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AFDC0715209A0A00DB5DEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		84AFDC0A15209A0A00DB5DEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -72,7 +72,6 @@
 		84AFDC1A15209A0A00DB5DEF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		84AFDC1D15209A0A00DB5DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		84AFDC2C15209B3400DB5DEF /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ofxCocoaPlugins.framework; path = "../../../Library/Developer/Xcode/DerivedData/DEW-ezvputjuauvbykashinnkcobfngm/Build/Products/Debug/ofxCocoaPlugins.framework"; sourceTree = "<group>"; };
 		84EA1BAB1521C6E600F91FC8 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		84EA1BAE1521C6E600F91FC8 /* ChanTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanTraits.h; sourceTree = "<group>"; };
 		84EA1BAF1521C6E600F91FC8 /* CinderMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderMath.h; sourceTree = "<group>"; };
@@ -135,8 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				845FB20D1520A77400FAB093 /* OpenGL.framework in Frameworks */,
-				84AFDC4015209CA800DB5DEF /* ofxCocoaPlugins.framework in Frameworks */,
 				84AFDC0815209A0A00DB5DEF /* Cocoa.framework in Frameworks */,
+				84A64CB3152492B3004B2050 /* ofxCocoaPlugins.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +156,7 @@
 		84AFDBF815209A0A00DB5DEF = {
 			isa = PBXGroup;
 			children = (
-				847E9E6E1524897A00710E6E /* ofxCocoaPlugins.framework */,
+				84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */,
 				84AFDC2C15209B3400DB5DEF /* Project.xcconfig */,
 				84EA19EA1521C6E600F91FC8 /* Addons */,
 				8483C6691521C0E5006090CF /* Plugins */,
@@ -179,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				845FB20C1520A77400FAB093 /* OpenGL.framework */,
-				84AFDC3F15209CA800DB5DEF /* ofxCocoaPlugins.framework */,
 				84AFDC0715209A0A00DB5DEF /* Cocoa.framework */,
 				84AFDC0915209A0A00DB5DEF /* Other Frameworks */,
 			);
@@ -574,6 +572,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/DEW-ezvputjuauvbykashinnkcobfngm/Build/Products/Debug\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DEW-ezvputjuauvbykashinnkcobfngm/Build/Products/Debug\"",
+					"\"$(SRCROOT)/ofxCocoaPlugins/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -600,6 +599,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/DEW-ezvputjuauvbykashinnkcobfngm/Build/Products/Debug\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DEW-ezvputjuauvbykashinnkcobfngm/Build/Products/Debug\"",
+					"\"$(SRCROOT)/ofxCocoaPlugins/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";

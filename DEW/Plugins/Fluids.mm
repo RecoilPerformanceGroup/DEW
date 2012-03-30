@@ -12,6 +12,11 @@
     [[self addPropF:@"fluidsDeltaT"] setMinValue:0 maxValue:0.1];
     [[self addPropF:@"fluidsFadeSpeed"] setMinValue:0 maxValue:0.1];
     [[self addPropF:@"fluidsSolverIterations"] setMinValue:1 maxValue:50];
+    [[self addPropF:@"fluidsVisc"] setMaxValue:0.0002f];
+    [self addPropB:@"fluidsReset"];
+    
+    [self addPropF:@"globalForce"];
+    [[self addPropF:@"globalForceRotation"] setMaxValue:360];
     
 }
 
@@ -42,9 +47,26 @@
 
 
 -(void)update:(NSDictionary *)drawingInformation{
+    if(PropB(@"fluidsReset")){
+        SetPropB(@"fluidsReset", 0);
+        fluids->reset(); 
+    }
+    
+    CachePropF(globalForce);
+    if(globalForce){
+//        NSLog(@"%f %f",fluids->uv[10].x, fluids->uv[10].y);
+        CachePropF(globalForceRotation);
+        Vec2f f = Vec2f(0,globalForce*0.001);
+        f.rotate(globalForceRotation*DEG_TO_RAD);
+        for(int i=0;i<fluids->getNumCells();i++){
+            fluids->uv[i] += f;
+        }
+    }
+    
     fluids->setDeltaT(PropF(@"fluidsDeltaT"));
     fluids->setFadeSpeed(PropF(@"fluidsFadeSpeed"));
     fluids->setSolverIterations(PropI(@"fluidsSolverIterations"));
+    fluids->setVisc(PropF(@"fluidsVisc"));
     fluids->update();
     
     if([[self controlMouseColorEnabled] state] && lastControlMouse.x != -1){
