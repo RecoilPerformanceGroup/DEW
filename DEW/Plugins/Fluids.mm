@@ -1,5 +1,4 @@
 #import "Fluids.h"
-#import <ofxCocoaPlugins/BlobTracker2d.h>
 #import <ofxCocoaPlugins/CustomGraphics.h>
 #import <ofxCocoaPlugins/Keystoner.h>
 #import <ofxCocoaPlugins/Tracker.h>
@@ -48,9 +47,33 @@
 
     lastControlMouse.x = -1;
 
+    fluidImage.allocate(200,100);
 }
 
 -(void)awakeFromNib{
+}
+
+//
+//----------------
+//
+
+-(void) addImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
+    Vec3f * fluidColor = fluids->color;
+    unsigned char * pixel = inputImage->getPixels();
+    for(int i=0 ; i<fluids->getNumCells() ; i++,fluidColor++, pixel++){
+        float pixelValue = factor * (*pixel);
+        *fluidColor += Vec3f(pixelValue*color.r, pixelValue*color.g , pixelValue * color.b);
+    }
+}
+
+-(void) multInverseImageWithFluidsForces:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor {
+    Vec2f * fluidUv = fluids->uv;
+    unsigned char * pixel = inputImage->getPixels();
+    for(int i=0 ; i<fluids->getNumCells() ; i++,fluidUv++, pixel++){
+        float pixelValue = factor * (*pixel);
+        *fluidUv *= (1-pixelValue);
+    }
+
 }
 
 //
@@ -68,19 +91,19 @@
     }
     
     //------ Tracker Color ----------
-    ofxCvGrayscaleImage * trackerImage = [tracker trackerImageWithResolution:NSMakeSize(fluids->getWidth(), fluids->getHeight())];
+    ofxCvGrayscaleImage trackerImage = [tracker trackerImageWithSize:CGSizeMake(fluids->getWidth(), fluids->getHeight())];
     CachePropF(trackerColorAdd);
     if(trackerColorAdd){
-    
+        [self addImageToFluids:&trackerImage withFactor:trackerColorAdd color:Color(1.0,0.0,0.0)];
     }
     
     //------ Tracker Block Force ----------    
     CachePropF(trackerForceBlock);
     if(trackerForceBlock){
-        
+        [self multInverseImageWithFluidsForces:&trackerImage withFactor:trackerForceBlock];
     }
     
-    //---------------------------
+    //-------- globalForce --------
     
     CachePropF(globalForce);
     if(globalForce){
@@ -178,6 +201,19 @@
     fluids->setVisc(PropF(@"fluidsVisc"));
     fluids->update();
     
+    unsigned char * pixel = (unsigned char*) fluidImage.getCvImage()->imageData;
+    Vec3f * fluidPixel = fluids->color; 
+    for(int i=0;i<fluidImage.width*fluidImage.height*3; i++,pixel++){
+        if(i%3 == 0){
+            fluidPixel++;
+        }
+        if(i% fluids->getWidth() == 0){
+            fluidPixel++;
+        }
+
+        *pixel  = (*fluidPixel)[i%3]*255;
+    }
+    fluidImage.flagImageChanged();
 }
 
 //
@@ -185,8 +221,13 @@
 //
 
 -(void)draw:(NSDictionary *)drawingInformation{
-    fluidsDrawer->setDrawMode(kFluidDrawColor);
-    fluidsDrawer->draw(0,0,1,1);
+//    fluidsDrawer->setDrawMode(kFluidDrawColor);
+//    fluidsDrawer->draw(0,0,1,1);
+/*    ApplySurface(@"Floor"){
+    //    fluidsDrawer->getTextureReference().draw(0, 0, surfaceAspect, 1);
+    } PopSurface();*/
+    
+    fluidImage.draw(0, 0,1,1);
 }
 
 //
@@ -198,7 +239,6 @@
     ofRect(0,0,ofGetWidth(), ofGetWidth());
 
     ofSetColor(255,255,255,255);
-
     fluidsDrawer->setDrawMode((FluidDrawMode)PropI(@"controlDrawMode"));
     fluidsDrawer->draw(0,0,ofGetWidth(),ofGetHeight());
     

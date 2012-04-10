@@ -2,6 +2,8 @@
 
 #import <ofxCocoaPlugins/Plugin.h>
 #import "MSAFluid.h"
+#import <ofxCocoaPlugins/BlobTracker2d.h>
+
 
 using namespace MSA;
 
@@ -23,6 +25,8 @@ using namespace MSA;
     int opticalH;
     
     float surfaceAspect;
+    
+    ofxCvColorImage fluidImage;
 }
 @property (assign) IBOutlet NSButton *controlMouseColorEnabled;
 @property (assign) IBOutlet NSColorWell *controlMouseColor;
