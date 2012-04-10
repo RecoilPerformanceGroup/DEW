@@ -207,7 +207,8 @@
         if(i%3 == 0){
             fluidPixel++;
         }
-        if(i% fluids->getWidth() == 0){
+        if(i > 0 && (i) % (3*(fluids->getWidth()-2)) == 0){
+            fluidPixel++;
             fluidPixel++;
         }
 
@@ -223,11 +224,14 @@
 -(void)draw:(NSDictionary *)drawingInformation{
 //    fluidsDrawer->setDrawMode(kFluidDrawColor);
 //    fluidsDrawer->draw(0,0,1,1);
-/*    ApplySurface(@"Floor"){
+    ApplySurface(@"Floor"){
     //    fluidsDrawer->getTextureReference().draw(0, 0, surfaceAspect, 1);
-    } PopSurface();*/
-    
-    fluidImage.draw(0, 0,1,1);
+        ofSetColor(255, 255, 255);
+        fluidImage.draw(0, 0,aspect,1);
+    } PopSurface();
+
+    ofSetColor(255, 255, 255);
+
 }
 
 //
