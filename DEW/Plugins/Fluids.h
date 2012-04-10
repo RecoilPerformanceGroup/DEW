@@ -16,6 +16,13 @@ using namespace MSA;
     NSButton *controlMouseColorEnabled;
     NSButton *controlMouseForceEnabled;
     NSSlider *controlMouseForce;
+    
+    ofVec2f * opticalFlowField;
+    
+    int opticalW;
+    int opticalH;
+    
+    float surfaceAspect;
 }
 @property (assign) IBOutlet NSButton *controlMouseColorEnabled;
 @property (assign) IBOutlet NSColorWell *controlMouseColor;

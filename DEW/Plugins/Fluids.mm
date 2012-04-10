@@ -1,4 +1,8 @@
 #import "Fluids.h"
+#import <ofxCocoaPlugins/BlobTracker2d.h>
+#import <ofxCocoaPlugins/CustomGraphics.h>
+#import <ofxCocoaPlugins/Keystoner.h>
+#import <ofxCocoaPlugins/Tracker.h>
 
 @implementation Fluids
 @synthesize controlMouseColor;
@@ -15,7 +19,15 @@
     [[self addPropF:@"fluidsVisc"] setMaxValue:0.0002f];
     [self addPropB:@"fluidsReset"];
     
+    [self addPropF:@"opticalFlowForce"];
+    
+    [self addPropF:@"fluidWeight"];
+    
+    [self addPropF:@"trackerForceBlock"];
+    [self addPropF:@"trackerColorAdd"];    
+    
     [self addPropF:@"globalForce"];
+    [self addPropF:@"globalTwirl"];
     [[self addPropF:@"globalForceRotation"] setMaxValue:360];
     
 }
@@ -29,11 +41,11 @@
     fluids = new FluidSolver();
     fluids->setup(200,100);
     fluids->enableRGB(YES);
-
     
     fluidsDrawer = new FluidDrawerGl();
     fluidsDrawer->setup(fluids);
-    
+    fluidsDrawer->vectorSkipCount = 4; //Vector mode
+
     lastControlMouse.x = -1;
 
 }
@@ -47,10 +59,28 @@
 
 
 -(void)update:(NSDictionary *)drawingInformation{
+    Tracker * tracker = GetPlugin(Tracker);
+    
+    surfaceAspect = Aspect(@"Floor",0);
     if(PropB(@"fluidsReset")){
         SetPropB(@"fluidsReset", 0);
         fluids->reset(); 
     }
+    
+    //------ Tracker Color ----------
+    ofxCvGrayscaleImage * trackerImage = [tracker trackerImageWithResolution:NSMakeSize(fluids->getWidth(), fluids->getHeight())];
+    CachePropF(trackerColorAdd);
+    if(trackerColorAdd){
+    
+    }
+    
+    //------ Tracker Block Force ----------    
+    CachePropF(trackerForceBlock);
+    if(trackerForceBlock){
+        
+    }
+    
+    //---------------------------
     
     CachePropF(globalForce);
     if(globalForce){
@@ -63,17 +93,91 @@
         }
     }
     
+    //---------- fluidWeight --------
+    CachePropF(fluidWeight);
+    if(fluidWeight){
+        for(int i=0;i<fluids->getNumCells();i++){
+            Color c = fluids->getColorAtIndex(i);
+            fluids->addForceAtIndex(i, Vec2f(0,c.length()*fluidWeight));
+        }
+    }
+    
+    //---------- Twirl -------------
+    CachePropF(globalTwirl);
+    if(globalTwirl){
+        int i=0;
+        for(int y=0;y<fluids->getSize().y;y++){            
+            for(int x=0;x<fluids->getSize().x;x++){
+                ofVec2f p = ofVec2f(x/fluids->getSize().x-surfaceAspect*0.25,y/fluids->getSize().y-0.5);
+                float l = p.length();
+                ofVec2f hat = ofVec2f(-p.y,p.x);
+                //hat.normalize();
+                
+                fluids->uv[i] += ( Vec2f(hat.x,hat.y) * globalTwirl - fluids->uv[i])*0.2;
+                i++;
+//                fluids->addForceAtPos(Vec2f(x/fluids->getSize().x, y/fluids->getSize().y), Vec2f(hat.x,hat.y)*globalTwirl);
+            }
+        }
+    }
+    
+    //--------- OpticalFlow --------
+    
+    
+    CachePropF(opticalFlowForce);
+    if(opticalFlowForce){
+        opticalFlowField = [[GetPlugin(BlobTracker2d) getInstance:0] opticalFlowFieldCalibrated];
+        if(opticalFlowField != nil){
+            opticalW = [[GetPlugin(BlobTracker2d) getInstance:0] opticalFlowW];
+            opticalH = [[GetPlugin(BlobTracker2d) getInstance:0] opticalFlowH];
+            
+            ofVec2f * field = opticalFlowField;
+            for(int y=0;y<opticalH;y++){
+                for(int x=0;x<opticalW;x++){
+                    ofVec2f f = *field++;
+                    float l = f.length();
+                    if(l > 0){                    
+                        fluids->addForceAtPos(Vec2f((float)x/opticalW, (float)y/opticalH), Vec2f(f.x,f.y)*opticalFlowForce);
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    
+    //---------------------------
+    
+    
+    if([[self controlMouseColorEnabled] state] && lastControlMouse.x != -1){
+        NSColor * color = [[self controlMouseColor] color];
+        Color c(MSA::CM_RGB,  [color redComponent], [color greenComponent], [color blueComponent] );
+//        fluids->addColorAtPos(Vec2f([self controlMouseX]/[[self controlGlView] frame].size.width, [self controlMouseY]/[[self controlGlView] frame].size.height), c*[color alphaComponent]*100.0);
+        int i=0;
+        ofVec2f mouse = ofVec2f([self controlMouseX]/[[self controlGlView] frame].size.width, [self controlMouseY]/[[self controlGlView] frame].size.height);
+        float radius = 0.02;
+        
+        for(int y=0;y<fluids->getSize().y;y++){            
+            for(int x=0;x<fluids->getSize().x;x++){
+                ofVec2f p = ofVec2f(x/fluids->getSize().x, y/fluids->getSize().y);
+                if (p.distance(mouse) < radius) {
+                    fluids->addColorAtIndex(i, c*[color alphaComponent]*10.0);           
+                }
+                i++;
+                //                fluids->addForceAtPos(Vec2f(x/fluids->getSize().x, y/fluids->getSize().y), Vec2f(hat.x,hat.y)*globalTwirl);
+            }
+        }
+
+    }
+    
+    
+    //---------------------------
+    
     fluids->setDeltaT(PropF(@"fluidsDeltaT"));
     fluids->setFadeSpeed(PropF(@"fluidsFadeSpeed"));
     fluids->setSolverIterations(PropI(@"fluidsSolverIterations"));
     fluids->setVisc(PropF(@"fluidsVisc"));
     fluids->update();
     
-    if([[self controlMouseColorEnabled] state] && lastControlMouse.x != -1){
-        NSColor * color = [[self controlMouseColor] color];
-        Color c(MSA::CM_RGB,  [color redComponent], [color greenComponent], [color blueComponent] );
-        fluids->addColorAtPos(Vec2f([self controlMouseX]/[[self controlGlView] frame].size.width, [self controlMouseY]/[[self controlGlView] frame].size.height), c*[color alphaComponent]*100.0);
-    }
 }
 
 //
@@ -90,13 +194,34 @@
 //
 
 -(void)controlDraw:(NSDictionary *)drawingInformation{    
-    ofBackground(0, 0, 0);
+    ofSetColor(0,0,0,255);
+    ofRect(0,0,ofGetWidth(), ofGetWidth());
+
+    ofSetColor(255,255,255,255);
+
     fluidsDrawer->setDrawMode((FluidDrawMode)PropI(@"controlDrawMode"));
     fluidsDrawer->draw(0,0,ofGetWidth(),ofGetHeight());
+    
+    ofEnableAlphaBlending();
+    if(opticalFlowField){
+        ofVec2f * field = opticalFlowField;
+        for(int y=0;y<opticalH;y++){
+            for(int x=0;x<opticalW;x++){
+                ofVec2f f = *field++;
+                float l = f.length();
+                if(l > 0){                    
+                    float a = l / 50.0;
+                    glColor4f(1.0, 1.0, 1.0, a);
+                    ofVec2f p = ofVec2f(ofGetWidth()*x/opticalW , ofGetHeight()*y/opticalH);
+                    of2DArrow(p, p+f, 4);
+                }
+            }
+        }
+    }
 }
 
 -(void)controlMouseDragged:(float)x y:(float)y button:(int)button{
-        Vec2f pos = Vec2f((float)x/[[self controlGlView] frame].size.width, (float)y/[[self controlGlView] frame].size.height);
+    Vec2f pos = Vec2f((float)x/[[self controlGlView] frame].size.width, (float)y/[[self controlGlView] frame].size.height);
     if(lastControlMouse.x == -1){
         lastControlMouse = pos;
     } else {
