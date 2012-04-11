@@ -20,7 +20,7 @@
     
     [self addPropF:@"opticalFlowForce"];
     
-    [self addPropF:@"fluidWeight"];
+    [[self addPropF:@"fluidWeight"] setMaxValue:0.1];
     
     [self addPropF:@"trackerForceBlock"];
     [self addPropF:@"trackerColorAdd"];    
@@ -28,7 +28,8 @@
     [self addPropF:@"globalForce"];
     [self addPropF:@"globalTwirl"];
     [[self addPropF:@"globalForceRotation"] setMaxValue:360];
-    
+    [self addPropF:@"projectorFront"];
+    [self addPropF:@"projectorBack"];
 }
 
 //
@@ -71,7 +72,7 @@
     unsigned char * pixel = inputImage->getPixels();
     for(int i=0 ; i<fluids->getNumCells() ; i++,fluidUv++, pixel++){
         float pixelValue = factor * (*pixel);
-        *fluidUv *= (1-pixelValue);
+        *fluidUv *= fabs(1-pixelValue/255.0);
     }
 
 }
@@ -94,7 +95,10 @@
     ofxCvGrayscaleImage trackerImage = [tracker trackerImageWithSize:CGSizeMake(fluids->getWidth(), fluids->getHeight())];
     CachePropF(trackerColorAdd);
     if(trackerColorAdd){
-        [self addImageToFluids:&trackerImage withFactor:trackerColorAdd color:Color(1.0,0.0,0.0)];
+        NSColor * color = [[self controlMouseColor] color];
+        Color c(MSA::CM_RGB,  [color redComponent], [color greenComponent], [color blueComponent] );
+
+        [self addImageToFluids:&trackerImage withFactor:trackerColorAdd*0.1 color:c];
     }
     
     //------ Tracker Block Force ----------    
@@ -195,7 +199,7 @@
     
     //---------------------------
     
-    fluids->setDeltaT(PropF(@"fluidsDeltaT"));
+    fluids->setDeltaT(PropF(@"fluidsDeltaT")*60.0/ofGetFrameRate());
     fluids->setFadeSpeed(PropF(@"fluidsFadeSpeed"));
     fluids->setSolverIterations(PropI(@"fluidsSolverIterations"));
     fluids->setVisc(PropF(@"fluidsVisc"));
@@ -226,7 +230,18 @@
 //    fluidsDrawer->draw(0,0,1,1);
     ApplySurface(@"Floor"){
     //    fluidsDrawer->getTextureReference().draw(0, 0, surfaceAspect, 1);
-        ofSetColor(255, 255, 255);
+        float alpha = 1.0;
+        switch (ViewNumber) {
+            case 1:
+                alpha = PropF(@"projectorFront");
+                break;
+            case 0:
+                alpha = PropF(@"projectorBack");
+                break;
+            default:
+                break;
+        }
+        ofSetColor(255*alpha, 255*alpha, 255*alpha);
         fluidImage.draw(0, 0,aspect,1);
     } PopSurface();
 
