@@ -18,6 +18,9 @@
 		84AFDC1B15209A0A00DB5DEF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84AFDC1A15209A0A00DB5DEF /* AppDelegate.mm */; };
 		84AFDC1E15209A0A00DB5DEF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC1C15209A0A00DB5DEF /* MainMenu.xib */; };
 		84AFDC2D15209B3400DB5DEF /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84AFDC2C15209B3400DB5DEF /* Project.xcconfig */; };
+		84DF2EE515385C49001F3C62 /* VerticalMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF2EE415385C49001F3C62 /* VerticalMask.png */; };
+		84DF2EE815385EC7001F3C62 /* VerticalMaskWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF2EE715385EC7001F3C62 /* VerticalMaskWhite.png */; };
+		84DF2EEA153864BF001F3C62 /* VerticalMaskBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DF2EE9153864BF001F3C62 /* VerticalMaskBlack.png */; };
 		84EA1E1F1521C6E600F91FC8 /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EA1BAB1521C6E600F91FC8 /* install.xml */; };
 		84EA1E201521C6E600F91FC8 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EA1BB01521C6E600F91FC8 /* Color.cpp */; };
 		84EA1E211521C6E600F91FC8 /* MSACoreGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EA1BB71521C6E600F91FC8 /* MSACoreGL.cpp */; };
@@ -72,6 +75,9 @@
 		84AFDC1A15209A0A00DB5DEF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		84AFDC1D15209A0A00DB5DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		84AFDC2C15209B3400DB5DEF /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		84DF2EE415385C49001F3C62 /* VerticalMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VerticalMask.png; sourceTree = "<group>"; };
+		84DF2EE715385EC7001F3C62 /* VerticalMaskWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VerticalMaskWhite.png; sourceTree = "<group>"; };
+		84DF2EE9153864BF001F3C62 /* VerticalMaskBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VerticalMaskBlack.png; sourceTree = "<group>"; };
 		84EA1BAB1521C6E600F91FC8 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		84EA1BAE1521C6E600F91FC8 /* ChanTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanTraits.h; sourceTree = "<group>"; };
 		84EA1BAF1521C6E600F91FC8 /* CinderMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderMath.h; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		84AFDBF815209A0A00DB5DEF = {
 			isa = PBXGroup;
 			children = (
+				84DF2EE315385C49001F3C62 /* Assets */,
 				84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */,
 				84AFDC2C15209B3400DB5DEF /* Project.xcconfig */,
 				84EA19EA1521C6E600F91FC8 /* Addons */,
@@ -214,6 +221,16 @@
 				84AFDC1515209A0A00DB5DEF /* DEW-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84DF2EE315385C49001F3C62 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84DF2EE415385C49001F3C62 /* VerticalMask.png */,
+				84DF2EE715385EC7001F3C62 /* VerticalMaskWhite.png */,
+				84DF2EE9153864BF001F3C62 /* VerticalMaskBlack.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		84EA19EA1521C6E600F91FC8 /* Addons */ = {
@@ -473,6 +490,9 @@
 				84EA1EE91521C90500F91FC8 /* changelog.txt in Resources */,
 				84EA1EEC1521C90500F91FC8 /* install.xml in Resources */,
 				84EA1EED1521C90500F91FC8 /* LICENSE.txt in Resources */,
+				84DF2EE515385C49001F3C62 /* VerticalMask.png in Resources */,
+				84DF2EE815385EC7001F3C62 /* VerticalMaskWhite.png in Resources */,
+				84DF2EEA153864BF001F3C62 /* VerticalMaskBlack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

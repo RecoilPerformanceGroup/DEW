@@ -29,7 +29,8 @@
     [ocp addPlugin:[[CameraCalibration alloc] init] midiChannel:1];
     [ocp addPlugin:[[BlobTracker2d alloc] init] midiChannel:2];
     [ocp addPlugin:[[Tracker alloc] init] midiChannel:2];
-    
+    [ocp addPlugin:[[Midi alloc] init] midiChannel:2];
+
     [ocp addHeader:@"DEW"];
     [ocp addPlugin:[[Fluids alloc] init] midiChannel:10];
 

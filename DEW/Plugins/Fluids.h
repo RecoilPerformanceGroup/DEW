@@ -4,6 +4,16 @@
 #import "MSAFluid.h"
 #import <ofxCocoaPlugins/BlobTracker2d.h>
 
+#define BUFFER_SIZE 500
+#define BUFFER_PLAYBACK_COUNT 10
+typedef struct {
+    int countdown;
+    float pos;
+}    FluidLine;
+
+typedef struct {
+    float pos;
+}    TurnerPoint;
 
 using namespace MSA;
 
@@ -27,6 +37,23 @@ using namespace MSA;
     float surfaceAspect;
     
     ofxCvColorImage fluidImage;
+    
+    FluidLine fluidLines[30];
+    TurnerPoint turnerPoints[30];
+    ofVec2f dropsPos;
+    
+    ofImage * verticalMask;
+    ofImage * verticalMaskWhite;
+    ofImage * verticalMaskBlack;
+    ofxCvGrayscaleImage trackerImage;
+    
+    ofxCvGrayscaleImage buffer[BUFFER_SIZE];    
+    BOOL alreadyRecording;
+    int bufferRecordIndex;
+    float bufferPlaybackIndexes[BUFFER_PLAYBACK_COUNT];
+    int bufferPlaybackCount;
+    int bufferPlaybackOffset[BUFFER_PLAYBACK_COUNT];
+    
 }
 @property (assign) IBOutlet NSButton *controlMouseColorEnabled;
 @property (assign) IBOutlet NSColorWell *controlMouseColor;
