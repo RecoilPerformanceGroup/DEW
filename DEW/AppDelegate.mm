@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "Fluids.h"
+#import "BlobLight.h"
 
 @implementation AppDelegate
 
@@ -33,6 +34,7 @@
 
     [ocp addHeader:@"DEW"];
     [ocp addPlugin:[[Fluids alloc] init] midiChannel:10];
+    [ocp addPlugin:[[BlobLight alloc] init] midiChannel:11];
 
     [ocp loadPlugins];
 

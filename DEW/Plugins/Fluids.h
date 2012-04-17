@@ -6,6 +6,10 @@
 
 #define BUFFER_SIZE 500
 #define BUFFER_PLAYBACK_COUNT 10
+
+using namespace MSA;
+
+
 typedef struct {
     int countdown;
     float pos;
@@ -15,7 +19,11 @@ typedef struct {
     float pos;
 }    TurnerPoint;
 
-using namespace MSA;
+typedef struct {
+    int countdown;
+    MSA::Vec2f pos;
+} StartLight;
+
 
 @interface Fluids : ofPlugin {
     ofImage * img;
@@ -41,6 +49,8 @@ using namespace MSA;
     FluidLine fluidLines[30];
     TurnerPoint turnerPoints[30];
     ofVec2f dropsPos;
+    float fallingFluidsPos;
+    StartLight startLight[100];
     
     ofImage * verticalMask;
     ofImage * verticalMaskWhite;
@@ -53,7 +63,8 @@ using namespace MSA;
     float bufferPlaybackIndexes[BUFFER_PLAYBACK_COUNT];
     int bufferPlaybackCount;
     int bufferPlaybackOffset[BUFFER_PLAYBACK_COUNT];
-    
+    float bufferPlaybackClipLeft[BUFFER_PLAYBACK_COUNT];
+    ofxCvGrayscaleImage bufferTmp;
 }
 @property (assign) IBOutlet NSButton *controlMouseColorEnabled;
 @property (assign) IBOutlet NSColorWell *controlMouseColor;
