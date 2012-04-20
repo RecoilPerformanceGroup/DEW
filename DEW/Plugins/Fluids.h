@@ -4,8 +4,14 @@
 #import "MSAFluid.h"
 #import <ofxCocoaPlugins/BlobTracker2d.h>
 
-#define BUFFER_SIZE 500
+#define BUFFER_SIZE 1000
 #define BUFFER_PLAYBACK_COUNT 10
+#define OVERFLOW_TOP 50
+#define OVERFLOW_BOTTOM 25
+#define OVERFLOW_TOTAL (OVERFLOW_TOP+OVERFLOW_BOTTOM)
+
+#define FLUIDS_WIDTH 200
+#define FLUIDS_HEIGHT 100
 
 using namespace MSA;
 

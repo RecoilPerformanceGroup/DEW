@@ -15,7 +15,7 @@
     
     [[self addPropF:@"fluidsDeltaT"] setMinValue:0 maxValue:0.1];
     [[self addPropF:@"fluidsFadeSpeed"] setMinValue:0 maxValue:1];
-    [[self addPropF:@"fluidsSolverIterations"] setMinValue:1 maxValue:50];
+    [[self addPropF:@"fluidsSolverIterations"] setMinValue:0 maxValue:50];
     [[self addPropF:@"fluidsVisc"] setMaxValue:1];
     [self addPropB:@"fluidsReset"];
     
@@ -53,10 +53,11 @@
     [[self addPropF:@"postGain"] setMinValue:-1 maxValue:10.0]; 
     
     [self addPropB:@"bufferRecord"]; 
+    [self addPropB:@"bufferPlaybackReset"]; 
     [self addPropF:@"bufferAlpha"]; 
     [self addPropB:@"bufferTriggerStart"]; 
     [[self addPropF:@"bufferOffset"] setMinValue:-1 maxValue:1]; 
-    [[self addPropF:@"bufferPlaybackRate"] setMinValue:0 maxValue:1];   
+    [[self addPropF:@"bufferPlaybackRate"] setMinValue:0 maxValue:2];   
     [self addPropF:@"bufferClipLeft"]; 
     
     [self addPropF:@"colorR"];
@@ -78,7 +79,7 @@
 
 -(void)setup{
     fluids = new FluidSolver();
-    fluids->setup(200,150);
+    fluids->setup(FLUIDS_WIDTH , FLUIDS_HEIGHT + OVERFLOW_TOTAL);
     fluids->enableRGB(YES);
     
     fluidsDrawer = new FluidDrawerGl();
@@ -87,7 +88,7 @@
     
     lastControlMouse.x = -1;
     
-    fluidImage.allocate(200,100);
+    fluidImage.allocate(FLUIDS_WIDTH,FLUIDS_HEIGHT);
     
     for(int i=0;i<30;i++){
         turnerPoints[i].pos = ofRandom(0,1);
@@ -105,12 +106,12 @@
     verticalMaskBlack = new ofImage();    
     verticalMaskBlack->loadImage([[[NSBundle mainBundle] pathForResource:@"VerticalMaskBlack" ofType:@"png"] cStringUsingEncoding:NSUTF8StringEncoding]);
     
-    trackerImage.allocate(fluids->getWidth(), fluids->getHeight()-50);
+    trackerImage.allocate(fluids->getWidth(), fluids->getHeight()-OVERFLOW_TOTAL);
     
     for(int i=0;i<BUFFER_SIZE;i++){
-        buffer[i].allocate(fluids->getWidth(), fluids->getHeight()-50);
+        buffer[i].allocate(fluids->getWidth(), fluids->getHeight()-OVERFLOW_TOTAL);
     }
-    bufferTmp.allocate(fluids->getWidth(), fluids->getHeight()-50);
+    bufferTmp.allocate(fluids->getWidth(), fluids->getHeight()-OVERFLOW_TOTAL);
     
 }
 
@@ -162,15 +163,15 @@
 }
 
 -(void) addImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
-    [self addImageToFluids:inputImage withFactor:factor color:color transform:CGRectMake(0, 25, 1, 1)];
+    [self addImageToFluids:inputImage withFactor:factor color:color transform:CGRectMake(0, OVERFLOW_TOP, 1, 1)];
 }
 
 
 
 -(void) subtractImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
-    Vec3f * fluidColor = fluids->color + 25*fluids->getWidth();
+    Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
-    for(int i=25*fluids->getWidth() ; i<fluids->getNumCells()-25*fluids->getWidth() ; i++,fluidColor++, pixel++){
+    for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidColor++, pixel++){
         float pixelValue = factor * (*pixel);
         pixelValue /= 255.0;
         *fluidColor -= Vec3f(pixelValue*color.r, pixelValue*color.g , pixelValue * color.b);
@@ -178,20 +179,20 @@
 }
 
 -(void) multImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
-    Vec3f * fluidColor = fluids->color + 25*fluids->getWidth();
+    Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
     //for(int i=0 ; i<fluids->getNumCells() ; i++,fluidColor++, pixel++){
-    for(int i=25*fluids->getWidth() ; i<fluids->getNumCells()-25*fluids->getWidth() ; i++,fluidColor++, pixel++){
+    for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidColor++, pixel++){
         
         float pixelValue = factor * (*pixel);
         *fluidColor *= Vec3f(pixelValue*color.r, pixelValue*color.g , pixelValue * color.b);
     }
 }
 -(void) multInverseImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
-    Vec3f * fluidColor = fluids->color + 25*fluids->getWidth();
+    Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
     //    for(int i=0 ; i<fluids->getNumCells() ; i++,fluidColor++, pixel++){
-    for(int i=25*fluids->getWidth() ; i<fluids->getNumCells()-25*fluids->getWidth() ; i++,fluidColor++, pixel++){
+    for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidColor++, pixel++){
         
         float pixelValue = factor * (*pixel);
         pixelValue /= 255.0;
@@ -201,10 +202,10 @@
 
 
 -(void) multInverseImageWithFluidsForces:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor {
-    Vec2f * fluidUv = fluids->uv + 25*fluids->getWidth();
+    Vec2f * fluidUv = fluids->uv + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
     // for(int i=0 ; i<fluids->getNumCells() ; i++,fluidUv++, pixel++){
-    for(int i=25*fluids->getWidth() ; i<fluids->getNumCells()-25*fluids->getWidth() ; i++,fluidUv++, pixel++){
+    for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidUv++, pixel++){
         float pixelValue = factor * (*pixel);
         *fluidUv *= fabs(1-pixelValue/255.0);
     }
@@ -231,7 +232,7 @@
     //------------- Tracker -------------------
     
     Tracker * tracker = GetPlugin(Tracker);
-    trackerImage = [tracker trackerImageWithSize:CGSizeMake(fluids->getWidth(), fluids->getHeight()-50)];
+    trackerImage = [tracker trackerImageWithSize:CGSizeMake(fluids->getWidth(), fluids->getHeight()-OVERFLOW_TOTAL)];
     
     if(PropB(@"bufferRecord")){
         if(!alreadyRecording){
@@ -245,6 +246,15 @@
             NSLog(@"Recording ran out of tape");
         } else {
             buffer[bufferRecordIndex++] = trackerImage;            
+        }
+    } else {
+        alreadyRecording = NO;
+    }
+    
+    if(PropB(@"bufferPlaybackReset")){
+        SetPropB(@"bufferPlaybackReset", NO);
+        for(int i=0;i<BUFFER_PLAYBACK_COUNT;i++){
+            bufferPlaybackIndexes[i] = 0;
         }
     }
     
@@ -272,7 +282,7 @@
                     cvResize(buffer[bufferIndex].getCvImage(), bufferTmp.getCvImage());
                     bufferTmp.flagImageChanged();
                     
-                    [self addImageToFluids:&bufferTmp withFactor:bufferAlpha color:c transform:CGRectMake(0, bufferPlaybackOffset[i], 1, 1)];                
+                    [self addImageToFluids:&bufferTmp withFactor:bufferAlpha color:c transform:CGRectMake(0, bufferPlaybackOffset[i]+OVERFLOW_TOP, 1, 1)];                
                 }
             }
         }
@@ -294,7 +304,7 @@
     CachePropF(globalForce);
     if(globalForce){
         CachePropF(globalForceRotation);
-        Vec2f f = Vec2f(0,globalForce*0.001);
+        Vec2f f = Vec2f(0,globalForce*0.01);
         f.rotate(globalForceRotation*DEG_TO_RAD);
         for(int i=0;i<fluids->getNumCells();i++){
             fluids->uv[i] += f;
@@ -457,7 +467,7 @@
         for(int i=0;i<generateLinesSideNum;i++){
             if(fluidLines[i].countdown <= 0){
                 fluidLines[i].countdown = ofRandom(generateLinesSideDuration*100,generateLinesSideDuration*500);
-                fluidLines[i].pos = ofRandom(25.0/150.0,125.0/150.0);
+                fluidLines[i].pos = ofRandom(OVERFLOW_TOP/(FLUIDS_HEIGHT+OVERFLOW_TOTAL),(FLUIDS_HEIGHT+OVERFLOW_TOP)/(FLUIDS_HEIGHT+OVERFLOW_TOTAL));
             } else {
                 fluids->addColorAtPos(Vec2f(0.99,fluidLines[i].pos), c);
             }
@@ -486,7 +496,7 @@
         }
     } else if(generateDrops < 0){
         SetPropF(@"generateDrops", 0);
-        dropsPos = ofVec2f(ofRandom(0.1,0.9), ofRandom(0.1,0.4));
+        dropsPos = ofVec2f(ofRandom(0.1,0.9), ofRandom(0.26,0.30));
         
     }
     
@@ -577,7 +587,7 @@
     CachePropF(postGain);
     
     unsigned char * pixel = (unsigned char*) fluidImage.getCvImage()->imageData;
-    Vec3f * fluidPixel = fluids->color + 25 * fluids->getWidth(); 
+    Vec3f * fluidPixel = fluids->color + OVERFLOW_TOP * fluids->getWidth(); 
     for(int i=0;i<fluidImage.width*fluidImage.height*3; i++,pixel++){
         if(i%3 == 0){
             fluidPixel++;

@@ -85,7 +85,7 @@
     
     CachePropF(postFade);
     if(postFade){
-        *image -= postFade;
+        *image -= postFade*0.2;
     }    
     
     cvThreshold(image->getCvImage(), image->getCvImage(), 1.0, 1.0, CV_THRESH_TRUNC);
@@ -99,6 +99,8 @@
 
 -(void)draw:(NSDictionary *)drawingInformation{
     ApplySurface(@"Floor"){
+        ofEnableAlphaBlending();
+        glBlendFunc(GL_ONE, GL_ONE);
         if(ViewNumber == 0){
             CachePropF(alphaBack);
             glColor3f(PropF(@"colorR")*alphaBack, PropF(@"colorG")*alphaBack, PropF(@"colorB")*alphaBack);
