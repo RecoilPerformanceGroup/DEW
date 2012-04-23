@@ -9,6 +9,7 @@
 #define OVERFLOW_TOP 50
 #define OVERFLOW_BOTTOM 25
 #define OVERFLOW_TOTAL (OVERFLOW_TOP+OVERFLOW_BOTTOM)
+#define CENTER_Y ((float)(OVERFLOW_TOP+FLUIDS_HEIGHT*0.5)/(FLUIDS_HEIGHT+OVERFLOW_TOTAL))
 
 #define FLUIDS_WIDTH 200
 #define FLUIDS_HEIGHT 100
@@ -51,6 +52,7 @@ typedef struct {
     float surfaceAspect;
     
     ofxCvColorImage fluidImage;
+    ofxCvColorImage fluidImageWall;
     
     FluidLine fluidLines[30];
     TurnerPoint turnerPoints[30];

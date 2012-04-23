@@ -12,7 +12,9 @@
 
 -(void)initPlugin{
     [[self addPropF:@"controlDrawMode"] setMinValue:0 maxValue:3];
-    
+    [self addPropF:@"wall"];
+    [self addPropB:@"wallClear"];
+
     [[self addPropF:@"fluidsDeltaT"] setMinValue:0 maxValue:0.1];
     [[self addPropF:@"fluidsFadeSpeed"] setMinValue:0 maxValue:1];
     [[self addPropF:@"fluidsSolverIterations"] setMinValue:0 maxValue:50];
@@ -89,6 +91,7 @@
     lastControlMouse.x = -1;
     
     fluidImage.allocate(FLUIDS_WIDTH,FLUIDS_HEIGHT);
+    fluidImageWall.allocate(FLUIDS_WIDTH, OVERFLOW_TOP);
     
     for(int i=0;i<30;i++){
         turnerPoints[i].pos = ofRandom(0,1);
@@ -328,7 +331,7 @@
     if(mSuckCenter){
         float w = fluids->getSize().x;
         float h = fluids->getSize().y;
-        ofVec2f center = ofVec2f(0.5,0.5);
+        ofVec2f center = ofVec2f(0.5,CENTER_Y);
         int i=0;
         for(int y=0;y<h;y++){            
             for(int x=0;x<w;x++){
@@ -338,7 +341,6 @@
                 i++;
             }
         }
-        
     }
     
     // --------- mSuckCenterYAxis -------
@@ -346,7 +348,7 @@
     if(mSuckCenterYAxis){
         float w = fluids->getSize().x;
         float h = fluids->getSize().y;
-        float center = 0.5;
+        float center = CENTER_Y;
         int i=0;
         for(int y=0;y<h;y++){            
             for(int x=0;x<w;x++){
@@ -356,7 +358,6 @@
                 i++;
             }
         }
-        
     }
     
     //---------- mSuckTracking --------    
@@ -467,7 +468,7 @@
         for(int i=0;i<generateLinesSideNum;i++){
             if(fluidLines[i].countdown <= 0){
                 fluidLines[i].countdown = ofRandom(generateLinesSideDuration*100,generateLinesSideDuration*500);
-                fluidLines[i].pos = ofRandom(OVERFLOW_TOP/(FLUIDS_HEIGHT+OVERFLOW_TOTAL),(FLUIDS_HEIGHT+OVERFLOW_TOP)/(FLUIDS_HEIGHT+OVERFLOW_TOTAL));
+                fluidLines[i].pos = ofRandom((float)OVERFLOW_TOP/(FLUIDS_HEIGHT+OVERFLOW_TOTAL),(float)(FLUIDS_HEIGHT+OVERFLOW_TOP)/(FLUIDS_HEIGHT+OVERFLOW_TOTAL));
             } else {
                 fluids->addColorAtPos(Vec2f(0.99,fluidLines[i].pos), c);
             }
@@ -496,7 +497,7 @@
         }
     } else if(generateDrops < 0){
         SetPropF(@"generateDrops", 0);
-        dropsPos = ofVec2f(ofRandom(0.1,0.9), ofRandom(0.26,0.30));
+        dropsPos = ofVec2f(ofRandom(0.1,0.9), ofRandom(0.3,0.4));
         
     }
     
@@ -523,7 +524,7 @@
                 ofVec2f offset = ofVec2f(ofRandom(0,_distance),0).rotated(ofRandom(0,360));                
                 offset /= ofVec2f(1.5,1);
                 
-                startLight[i].pos = Vec2f(0.5+offset.x, 0.5+offset.y);
+                startLight[i].pos = Vec2f(0.5+offset.x, CENTER_Y+offset.y);
             }
 
             float fOffsetX = 1.0/fluids->getWidth();
@@ -601,6 +602,45 @@
     }
     fluidImage.flagImageChanged();
     
+    if(PropB(@"wall")){
+        unsigned char * pixel = (unsigned char*) fluidImageWall.getCvImage()->imageData;
+        Vec3f * fluidPixel = fluids->color; 
+        for(int i=0;i<fluidImageWall.width*fluidImageWall.height*3; i++,pixel++){
+            if(i%3 == 0){
+                fluidPixel++;
+            }
+            if(i > 0 && (i) % (3*(fluids->getWidth()-2)) == 0){
+                fluidPixel++;
+                fluidPixel++;
+            }
+            
+            *pixel  = MIN((*fluidPixel)[i%3]*255*(1+postGain),255);
+        }
+        fluidImageWall.flagImageChanged();
+    }
+    
+    if(PropB(@"wallClear")){
+        SetPropB(@"wallClear", NO);
+
+        Vec3f * fluidPixel = fluids->color; 
+        Vec2f * fluidUv = fluids->uv; 
+        for(int i=0;i<fluidImageWall.width*fluidImageWall.height*3; i++){
+            if(i%3 == 0){
+                fluidPixel++;
+                fluidUv++;
+            }
+            if(i > 0 && (i) % (3*(fluids->getWidth()-2)) == 0){
+                fluidPixel++;
+                fluidPixel++;
+                fluidUv++;
+                fluidUv++;
+            }
+            *fluidPixel = Vec3f(0,0,0);
+            *fluidUv = Vec2f(0,0);
+        }
+        
+    }
+    
     
     
 }
@@ -610,6 +650,7 @@
 //
 
 -(void)draw:(NSDictionary *)drawingInformation{
+    ofFill();
     //    fluidsDrawer->setDrawMode(kFluidDrawColor);
     //    fluidsDrawer->draw(0,0,1,1);
     ApplySurface(@"Floor"){
@@ -705,6 +746,17 @@
         
         
     } PopSurface();
+    
+    CachePropF(wall);
+    if(wall){
+        ApplySurface(@"Wall"){
+            if(ViewNumber == 1){
+                ofDisableAlphaBlending();
+                ofSetColor(255*wall,255*wall,255*wall);
+                fluidImageWall.draw(0,0,aspect,1);
+            }
+        } PopSurface();
+    }
     
     ofSetColor(255, 255, 255);
     
