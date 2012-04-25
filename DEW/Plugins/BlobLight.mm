@@ -22,6 +22,13 @@
     
     [self addPropB:@"clear"];
 
+    [self addPropF:@"fillFrontR"];
+    [self addPropF:@"fillFrontG"];
+    [self addPropF:@"fillFrontB"];
+
+    [self addPropF:@"fillBackR"];
+    [self addPropF:@"fillBackG"];
+    [self addPropF:@"fillBackB"];
 }
 
 //
@@ -110,6 +117,18 @@
             glColor3f(PropF(@"colorR")*alphaFront, PropF(@"colorG")*alphaFront, PropF(@"colorB")*alphaFront);
         }
         image->draw(0,0,aspect,1);
+    } PopSurface();
+    
+    ApplySurface(@"Floor"){
+        ofEnableAlphaBlending();
+        glBlendFunc(GL_ONE, GL_ONE);
+
+        if(ViewNumber == 1){
+            glColor3f(PropF(@"fillFrontR"), PropF(@"fillFrontG"), PropF(@"fillFrontB"));
+        } else {
+            glColor3f(PropF(@"fillBackR"), PropF(@"fillBackG"), PropF(@"fillBackB"));
+        }
+        ofRect(0, 0, aspect, 1);
     } PopSurface();
     
 }

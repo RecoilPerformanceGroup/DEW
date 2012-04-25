@@ -61,10 +61,15 @@
     [[self addPropF:@"bufferOffset"] setMinValue:-1 maxValue:1]; 
     [[self addPropF:@"bufferPlaybackRate"] setMinValue:0 maxValue:2];   
     [self addPropF:@"bufferClipLeft"]; 
+//    [[self addPropF:@"bufferDilate"] setMaxValue:10]; 
     
     [self addPropF:@"colorR"];
     [self addPropF:@"colorG"];
     [self addPropF:@"colorB"];
+    
+    [self addPropF:@"trackerColorR"];
+    [self addPropF:@"trackerColorG"];
+    [self addPropF:@"trackerColorB"];
     
     [self addPropF:@"maskVerticalBack"];
     [self addPropF:@"maskVerticalFront"];
@@ -137,11 +142,9 @@
         
         if(transform.origin.y < 0){
             pixel += int(-inputImage->getWidth()*transform.origin.y);
-            // numCellsToUpdate -= int(-inputImage->getWidth()*transform.origin.y);
         } else if(transform.origin.y > 0){
             fluidColor += int(inputImage->getWidth()*transform.origin.y);
             maxCellsToUpdate -= int(inputImage->getWidth()*transform.origin.y);
-            // numCellsToUpdate -= int(inputImage->getWidth()*transform.origin.y);            
         }
         
         int jump = PropI(@"trackerColorAddJump");
@@ -184,7 +187,6 @@
 -(void) multImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
     Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
-    //for(int i=0 ; i<fluids->getNumCells() ; i++,fluidColor++, pixel++){
     for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidColor++, pixel++){
         
         float pixelValue = factor * (*pixel);
@@ -194,7 +196,6 @@
 -(void) multInverseImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
     Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
-    //    for(int i=0 ; i<fluids->getNumCells() ; i++,fluidColor++, pixel++){
     for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidColor++, pixel++){
         
         float pixelValue = factor * (*pixel);
@@ -207,7 +208,7 @@
 -(void) multInverseImageWithFluidsForces:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor {
     Vec2f * fluidUv = fluids->uv + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
-    // for(int i=0 ; i<fluids->getNumCells() ; i++,fluidUv++, pixel++){
+
     for(int i=OVERFLOW_TOP*fluids->getWidth() ; i<fluids->getNumCells()-OVERFLOW_BOTTOM*fluids->getWidth() ; i++,fluidUv++, pixel++){
         float pixelValue = factor * (*pixel);
         *fluidUv *= fabs(1-pixelValue/255.0);
@@ -218,6 +219,29 @@
 //
 //----------------
 //
+
+
+-(bool) isValidDropsPosition:(float)x{
+    float w = 0.03;
+    
+    if(x < 0)
+        return false;
+    
+    for(int i=0;i<9;i++){
+        if(x > i*(1.0/8.0)-w && x < i*(1.0/8.0)+w){
+            return false;
+        }
+    }
+    
+    //Tracker
+    for(int i=0;i<trackerImage.getHeight();i++){
+        if(trackerImage.getPixels()[int(i*trackerImage.getWidth() + x*trackerImage.getWidth())]){
+            return false;
+        }
+    }
+    
+    return true;
+}
 
 
 -(void)update:(NSDictionary *)drawingInformation{
@@ -444,7 +468,12 @@
     //------ Tracker Color ----------
     CachePropF(trackerColorAdd);
     if(trackerColorAdd){
-        [self addImageToFluids:&trackerImage withFactor:trackerColorAdd color:c];
+        Color trackerColor = c;
+        if(PropF(@"trackerColorR") != 0 || PropF(@"trackerColorG") != 0 || PropF(@"trackerColorB") != 0){
+            trackerColor = Color(PropF(@"trackerColorR"), PropF(@"trackerColorG"), PropF(@"trackerColorB"));
+        }
+        [self addImageToFluids:&trackerImage withFactor:trackerColorAdd color:trackerColor];
+        
     }
     
     //------ Tracker Black ----------
@@ -474,8 +503,6 @@
             }
             
             fluidLines[i].countdown--;
-            
-            
         }
     }
     
@@ -497,8 +524,11 @@
         }
     } else if(generateDrops < 0){
         SetPropF(@"generateDrops", 0);
-        dropsPos = ofVec2f(ofRandom(0.1,0.9), ofRandom(0.3,0.4));
-        
+        float x = -1;
+        while(![self isValidDropsPosition:x]){
+            x = ofRandom(0,1);
+        }
+        dropsPos = ofVec2f(x, ofRandom(0.3,0.4));
     }
     
     
@@ -651,11 +681,7 @@
 
 -(void)draw:(NSDictionary *)drawingInformation{
     ofFill();
-    //    fluidsDrawer->setDrawMode(kFluidDrawColor);
-    //    fluidsDrawer->draw(0,0,1,1);
     ApplySurface(@"Floor"){
-        //    fluidsDrawer->getTextureReference().draw(0, 0, surfaceAspect, 1);
-        
         ofEnableAlphaBlending();
         
         CachePropF(maskTrackingBack);
@@ -663,8 +689,6 @@
         
         ofxCvGrayscaleImage mask = trackerImage;
         if(maskTrackingBack || maskTrackingFront){
-            //    Tracker * tracker = GetPlugin(Tracker);
-            //  mask = [tracker trackerImageWithSize:CGSizeMake(fluids->getWidth(), fluids->getHeight())];
             mask.dilate_3x3();
             mask.dilate_3x3();
             mask.dilate_3x3();
