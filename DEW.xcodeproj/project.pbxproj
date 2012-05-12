@@ -12,6 +12,7 @@
 		8483C66E1521C0FB006090CF /* Fluids.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C66C1521C0FB006090CF /* Fluids.xib */; };
 		849894B9153C66D200CB89C0 /* BlobLight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849894B7153C66D200CB89C0 /* BlobLight.mm */; };
 		849894BA153C66D200CB89C0 /* BlobLight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849894B8153C66D200CB89C0 /* BlobLight.xib */; };
+		84A17AFA155EB04D0001A650 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84A17AF9155EB04D0001A650 /* icon.icns */; };
 		84A64CB3152492B3004B2050 /* ofxCocoaPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */; };
 		84A64CB5152492C2004B2050 /* ofxCocoaPlugins.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */; };
 		84AFDC0815209A0A00DB5DEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFDC0715209A0A00DB5DEF /* Cocoa.framework */; };
@@ -66,6 +67,7 @@
 		849894B6153C66D200CB89C0 /* BlobLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobLight.h; sourceTree = "<group>"; };
 		849894B7153C66D200CB89C0 /* BlobLight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlobLight.mm; sourceTree = "<group>"; };
 		849894B8153C66D200CB89C0 /* BlobLight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlobLight.xib; sourceTree = "<group>"; };
+		84A17AF9155EB04D0001A650 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ofxCocoaPlugins.framework; path = ofxCocoaPlugins/build/Debug/ofxCocoaPlugins.framework; sourceTree = "<group>"; };
 		84AFDC0315209A0A00DB5DEF /* DEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AFDC0715209A0A00DB5DEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 		84AFDBF815209A0A00DB5DEF = {
 			isa = PBXGroup;
 			children = (
+				84A17AF9155EB04D0001A650 /* icon.icns */,
 				84DF2EE315385C49001F3C62 /* Assets */,
 				84A64CB2152492B3004B2050 /* ofxCocoaPlugins.framework */,
 				84AFDC2C15209B3400DB5DEF /* Project.xcconfig */,
@@ -502,6 +505,7 @@
 				84DF2EE815385EC7001F3C62 /* VerticalMaskWhite.png in Resources */,
 				84DF2EEA153864BF001F3C62 /* VerticalMaskBlack.png in Resources */,
 				849894BA153C66D200CB89C0 /* BlobLight.xib in Resources */,
+				84A17AFA155EB04D0001A650 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

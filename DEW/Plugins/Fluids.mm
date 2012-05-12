@@ -50,6 +50,7 @@
     [[self addPropF:@"generateLinesSideNum"] setMaxValue:30];
     [self addPropF:@"generateDrops"];
     [[self addPropF:@"generateFallingFluids"] setMaxValue:2];
+    [[self addPropF:@"generateFallingFluidsHeight"] setMaxValue:1];
     [self addPropF:@"generateStartLight"];
     
     [[self addPropF:@"postGain"] setMinValue:-1 maxValue:10.0]; 
@@ -172,8 +173,6 @@
     [self addImageToFluids:inputImage withFactor:factor color:color transform:CGRectMake(0, OVERFLOW_TOP, 1, 1)];
 }
 
-
-
 -(void) subtractImageToFluids:(ofxCvGrayscaleImage*)inputImage withFactor:(float)factor color:(Color)color{
     Vec3f * fluidColor = fluids->color + OVERFLOW_TOP*fluids->getWidth();
     unsigned char * pixel = inputImage->getPixels();
@@ -239,6 +238,11 @@
             return false;
         }
     }
+    
+    if(fabs(lastDropPos.x - x) < 0.2)
+        return false;
+    
+    lastDropPos.x = x;
     
     return true;
 }
@@ -455,8 +459,15 @@
                 for(int x=0;x<opticalW;x++){
                     ofVec2f f = *field++;
                     float l = f.lengthSquared();
-                    if(l > opticalFlowForceMin){                    
-                        fluids->addForceAtPos(Vec2f((float)x/opticalW, (float)y/opticalH), Vec2f(f.x,f.y)*opticalFlowForce);
+                    if(l > opticalFlowForceMin){   
+                        Vec2f pos = Vec2f((float)x/opticalW,
+                                            (float)y/opticalH);
+                        
+                        pos.y *= ((float)FLUIDS_HEIGHT/((float)FLUIDS_HEIGHT+OVERFLOW_TOTAL));
+                        pos.y += OVERFLOW_TOP / ((float)OVERFLOW_TOTAL+FLUIDS_HEIGHT);
+                        //*((float)FLUIDS_HEIGHT/((float)OVERFLOW_TOTAL+FLUIDS_HEIGHT)
+                        
+                        fluids->addForceAtPos(pos, -Vec2f(f.x,f.y)*opticalFlowForce);
                     }
                 }
             }
@@ -537,7 +548,7 @@
     if(generateFallingFluids){
         fallingFluidsPos = (sin((ofGetElapsedTimeMillis()/1000.0)/generateFallingFluids)+1)/2.0 + ofRandom(-0.1,0.1);
         for(int i=-5;i<5;i++){
-            fluids->addColorAtPos(Vec2f(fallingFluidsPos+i*1.0/fluids->getWidth(),0.1), c);
+            fluids->addColorAtPos(Vec2f(fallingFluidsPos+i*1.0/fluids->getWidth(),0.25*PropF(@"generateFallingFluidsHeight")), c);
         }
         
     }
@@ -808,7 +819,10 @@
                 if(l > 0){                    
                     float a = l / 50.0;
                     glColor4f(1.0, 1.0, 1.0, a);
-                    ofVec2f p = ofVec2f(ofGetWidth()*x/opticalW , ofGetHeight()*y/opticalH);
+                    ofVec2f p = ofVec2f((float)x/opticalW , (float)y/opticalH);
+                    p.y *= ((float)FLUIDS_HEIGHT/((float)FLUIDS_HEIGHT+OVERFLOW_TOTAL));
+                    p.y += OVERFLOW_TOP / ((float)OVERFLOW_TOTAL+FLUIDS_HEIGHT);
+                    p *= ofVec2f(ofGetWidth(),ofGetHeight());
                     of2DArrow(p, p+f, 4);
                 }
             }

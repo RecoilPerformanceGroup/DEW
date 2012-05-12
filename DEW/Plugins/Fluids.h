@@ -11,8 +11,8 @@
 #define OVERFLOW_TOTAL (OVERFLOW_TOP+OVERFLOW_BOTTOM)
 #define CENTER_Y ((float)(OVERFLOW_TOP+FLUIDS_HEIGHT*0.5)/(FLUIDS_HEIGHT+OVERFLOW_TOTAL))
 
-#define FLUIDS_WIDTH 200
-#define FLUIDS_HEIGHT 100
+#define FLUIDS_WIDTH 200.0
+#define FLUIDS_HEIGHT 100.0
 
 using namespace MSA;
 
@@ -57,6 +57,7 @@ typedef struct {
     FluidLine fluidLines[30];
     TurnerPoint turnerPoints[30];
     ofVec2f dropsPos;
+    ofVec2f lastDropPos;
     float fallingFluidsPos;
     StartLight startLight[100];
     
