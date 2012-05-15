@@ -749,13 +749,13 @@
             }
             
             ofSetColor(255,255,255,255*(1-maskVerticalFront));
-            ofRect(0, 0, surfaceAspect, 1);
+            ofRect(0, 0, 1, 1);
             
             //---- Tracking mask ----
             if(maskTrackingFront){
                 ofSetColor(255, 255, 255,255*maskTrackingFront);
                 
-                mask.draw(0, 0,surfaceAspect,1);
+                mask.draw(0, 0,1,1);
             }
             
             glBlendFunc(GL_DST_COLOR, GL_ZERO);

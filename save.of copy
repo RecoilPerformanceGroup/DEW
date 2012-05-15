@@ -29,7 +29,7 @@
 			</dict>
 			<key>NS.data</key>
 			<data>
-			AAM=
+			AAI=
 			</data>
 		</dict>
 		<dict>
@@ -592,8 +592,8 @@
 		<string>x</string>
 		<string>y</string>
 		<string>num</string>
-		<real>0.068230293691158295</real>
-		<real>0.75586354732513428</real>
+		<real>0.06023455411195755</real>
+		<real>0.72743427753448486</real>
 		<integer>0</integer>
 		<dict>
 			<key>$class</key>
@@ -632,8 +632,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.96641790866851807</real>
-		<real>0.74875622987747192</real>
+		<real>0.94912457466125488</real>
+		<real>0.74366301298141479</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -671,8 +671,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.68923240900039673</real>
-		<real>0.21570718288421631</real>
+		<real>0.67345499992370605</real>
+		<real>0.20677834749221802</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -710,8 +710,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.32942432165145874</real>
-		<real>0.22281450033187866</real>
+		<real>0.33475479483604431</real>
+		<real>0.20859986543655396</real>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -1107,8 +1107,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.049573574215173721</real>
-		<real>0.70966595411300659</real>
+		<real>0.022998617962002754</real>
+		<real>0.69823431968688965</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1146,8 +1146,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.98240935802459717</real>
-		<real>0.70966595411300659</real>
+		<real>0.96770906448364258</real>
+		<real>0.70649409294128418</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1185,8 +1185,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.67057567834854126</real>
-		<real>0.18017059564590454</real>
+		<real>0.67685848474502563</real>
+		<real>0.16426855325698853</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1224,8 +1224,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.3054371178150177</real>
-		<real>0.18017059564590454</real>
+		<real>0.29866823554039001</real>
+		<real>0.16547954082489014</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1606,8 +1606,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.03624735027551651</real>
-		<real>0.69900500774383545</real>
+		<real>0.0044141514226794243</real>
+		<real>0.70236420631408691</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1645,8 +1645,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.99307036399841309</real>
-		<real>0.73454159498214722</real>
+		<real>1.0117270946502686</real>
+		<real>0.74164891242980957</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1684,8 +1684,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.64658850431442261</real>
-		<real>0.16240227222442627</real>
+		<real>0.65458422899246216</real>
+		<real>0.14818763732910156</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1723,8 +1723,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.25746268033981323</real>
-		<real>0.15529495477676392</real>
+		<real>0.26279318332672119</real>
+		<real>0.14818763732910156</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2118,8 +2118,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>-0.0037313180509954691</real>
-		<real>0.70453286170959473</real>
+		<real>0.012260143645107746</real>
+		<real>0.88734900951385498</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2157,8 +2157,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>1.0140962600708008</real>
-		<real>0.70453286170959473</real>
+		<real>0.99840080738067627</real>
+		<real>0.92643922567367554</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2196,8 +2196,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.99958544969558716</real>
-		<real>0.030127108097076416</real>
+		<real>0.96908313035964966</real>
+		<real>0.041577756404876709</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2235,8 +2235,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>-0.018242098391056061</real>
-		<real>0.035655021667480469</real>
+		<real>0.06023455411195755</real>
+		<real>0.016702115535736084</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3071,8 +3071,8 @@
 		<real>0.0</real>
 		<integer>813</integer>
 		<real>2</real>
-		<real>0.84707182645797729</real>
-		<real>0.64464527368545532</real>
+		<real>0.17909035086631775</real>
+		<real>0.3162446916103363</real>
 		<real>1</real>
 		<real>0.0</real>
 		<real>0.0014143837615847588</real>
@@ -3081,20 +3081,20 @@
 		<real>-0.0036804026458412409</real>
 		<real>523.883056640625</real>
 		<real>1</real>
-		<real>0.81375885009765625</real>
-		<real>0.2049783319234848</real>
+		<real>0.21507501602172852</real>
+		<real>0.70409440994262695</real>
 		<real>0.0</real>
 		<real>0.17795757949352264</real>
 		<real>1</real>
 		<real>-0.39117363095283508</real>
 		<real>243.72120666503906</real>
 		<real>315.95556640625</real>
-		<real>0.31634923815727234</real>
-		<real>0.16427016258239746</real>
+		<real>0.65426361560821533</real>
+		<real>0.84345680475234985</real>
 		<real>0.0</real>
 		<real>0.0</real>
-		<real>0.68880206346511841</real>
-		<real>0.19820967316627502</real>
+		<real>0.21391233801841736</real>
+		<real>0.82489919662475586</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3998,7 +3998,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>74</integer>
+					<integer>322</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4023,7 +4023,7 @@
 		<string>threshold</string>
 		<real>1.0472074151039124</real>
 		<real>6.9190490245819092</real>
-		<real>24.326795339584351</real>
+		<real>10.48869714140892</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7499,7 +7499,7 @@
 				<integer>762</integer>
 			</dict>
 		</dict>
-		<real>0.0</real>
+		<real>0.2521701455116272</real>
 		<real>0.0</real>
 		<integer>23</integer>
 		<real>0.0</real>
@@ -7630,7 +7630,7 @@
 				<integer>779</integer>
 			</dict>
 		</dict>
-		<real>0.43241003155708313</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<integer>21</integer>
 		<real>0.0</real>

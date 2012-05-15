@@ -25,10 +25,13 @@
     [self addPropF:@"fillFrontR"];
     [self addPropF:@"fillFrontG"];
     [self addPropF:@"fillFrontB"];
-
+    
     [self addPropF:@"fillBackR"];
     [self addPropF:@"fillBackG"];
     [self addPropF:@"fillBackB"];
+    
+    [self addPropF:@"top"];
+    [self addPropF:@"height"];
 }
 
 //
@@ -128,7 +131,7 @@
         } else {
             glColor3f(PropF(@"fillBackR"), PropF(@"fillBackG"), PropF(@"fillBackB"));
         }
-        ofRect(0, 0, aspect, 1);
+        ofRect(0, PropF(@"top"), aspect, PropF(@"height"));
     } PopSurface();
     
 }
