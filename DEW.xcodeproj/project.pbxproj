@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8429C0DD156A7943000ADD56 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8429C0DB156A7943000ADD56 /* Test.mm */; };
+		8429C0DE156A7943000ADD56 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8429C0DC156A7943000ADD56 /* Test.xib */; };
 		845FB20D1520A77400FAB093 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845FB20C1520A77400FAB093 /* OpenGL.framework */; };
 		8483C66D1521C0FB006090CF /* Fluids.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8483C66B1521C0FB006090CF /* Fluids.mm */; };
 		8483C66E1521C0FB006090CF /* Fluids.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483C66C1521C0FB006090CF /* Fluids.xib */; };
@@ -60,6 +62,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8429C0DA156A7943000ADD56 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		8429C0DB156A7943000ADD56 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
+		8429C0DC156A7943000ADD56 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		845FB20C1520A77400FAB093 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		8483C66A1521C0FB006090CF /* Fluids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fluids.h; sourceTree = "<group>"; };
 		8483C66B1521C0FB006090CF /* Fluids.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Fluids.mm; sourceTree = "<group>"; };
@@ -164,6 +169,9 @@
 				849894B6153C66D200CB89C0 /* BlobLight.h */,
 				849894B7153C66D200CB89C0 /* BlobLight.mm */,
 				849894B8153C66D200CB89C0 /* BlobLight.xib */,
+				8429C0DA156A7943000ADD56 /* Test.h */,
+				8429C0DB156A7943000ADD56 /* Test.mm */,
+				8429C0DC156A7943000ADD56 /* Test.xib */,
 			);
 			name = Plugins;
 			path = DEW/Plugins;
@@ -506,6 +514,7 @@
 				84DF2EEA153864BF001F3C62 /* VerticalMaskBlack.png in Resources */,
 				849894BA153C66D200CB89C0 /* BlobLight.xib in Resources */,
 				84A17AFA155EB04D0001A650 /* icon.icns in Resources */,
+				8429C0DE156A7943000ADD56 /* Test.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +536,7 @@
 				84EA1E8C1521C6E700F91FC8 /* MSAUtils.mm in Sources */,
 				84EA1EEE1521C90500F91FC8 /* MSAObjCPointer.cpp in Sources */,
 				849894B9153C66D200CB89C0 /* BlobLight.mm in Sources */,
+				8429C0DD156A7943000ADD56 /* Test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@
 			</dict>
 			<key>NS.data</key>
 			<data>
-			AAM=
+			AQE=
 			</data>
 		</dict>
 		<dict>
@@ -591,8 +591,8 @@
 		<string>x</string>
 		<string>y</string>
 		<string>num</string>
-		<real>0.071428574621677399</real>
-		<real>0.71718931198120117</real>
+		<real>0.085365854203701019</real>
+		<real>0.73344945907592773</real>
 		<integer>0</integer>
 		<dict>
 			<key>$class</key>
@@ -631,8 +631,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.92334496974945068</real>
-		<real>0.68466901779174805</real>
+		<real>0.96864110231399536</real>
+		<real>0.74041807651519775</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -670,8 +670,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.67421603202819824</real>
-		<real>0.20847851037979126</real>
+		<real>0.69686412811279297</real>
+		<real>0.2177700400352478</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -709,8 +709,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.32157710194587708</real>
-		<real>0.21244466304779053</real>
+		<real>0.33275261521339417</real>
+		<real>0.22241580486297607</real>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -1105,8 +1105,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.062717773020267487</real>
-		<real>0.68466901779174805</real>
+		<real>0.059233449399471283</real>
+		<real>0.69860625267028809</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1144,8 +1144,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.91811847686767578</real>
-		<real>0.6753774881362915</real>
+		<real>0.96931159496307373</real>
+		<real>0.69889044761657715</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1183,8 +1183,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.66202092170715332</real>
-		<real>0.17595821619033813</real>
+		<real>0.68466901779174805</real>
+		<real>0.17828106880187988</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1222,8 +1222,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.30313590168952942</real>
-		<real>0.17363530397415161</real>
+		<real>0.31010451912879944</real>
+		<real>0.18292683362960815</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1603,8 +1603,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.041811846196651459</real>
-		<real>0.65911734104156494</real>
+		<real>0.034177690744400024</real>
+		<real>0.69423800706863403</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1642,8 +1642,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.89721256494522095</real>
-		<real>0.66144019365310669</real>
+		<real>0.98780488967895508</real>
+		<real>0.73577237129211426</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1681,8 +1681,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.60278743505477905</real>
-		<real>0.15505224466323853</real>
+		<real>0.64111500978469849</real>
+		<real>0.16202092170715332</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1720,7 +1720,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.24738675355911255</real>
+		<real>0.25435540080070496</real>
 		<real>0.15737515687942505</real>
 		<dict>
 			<key>$class</key>
@@ -2116,8 +2116,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.0069686411879956722</real>
-		<real>0.89140534400939941</real>
+		<real>-0.0069686411879956722</real>
+		<real>0.68931472301483154</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2155,8 +2155,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.97909408807754517</real>
-		<real>0.91695702075958252</real>
+		<real>1.0034843683242798</real>
+		<real>0.68931472301483154</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2194,8 +2194,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.94947737455368042</real>
-		<real>0.043554008007049561</real>
+		<real>1.00696861743927</real>
+		<real>0.027293860912322998</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2233,8 +2233,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>0.047038327902555466</real>
-		<real>0.022648096084594727</real>
+		<real>-0.019163763150572777</real>
+		<real>0.03193962574005127</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2555,7 +2555,12 @@
 				<integer>72</integer>
 			</dict>
 			<key>NS.objects</key>
-			<array/>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>166</integer>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>$class</key>
@@ -2569,6 +2574,50 @@
 					<key>CF$UID</key>
 					<integer>167</integer>
 				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>168</integer>
+				</dict>
+			</array>
+		</dict>
+		<string>typeSelection</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>169</integer>
+			</dict>
+			<key>NSLength</key>
+			<integer>1</integer>
+			<key>NSLocation</key>
+			<integer>0</integer>
+			<key>NSRangeCount</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>$classes</key>
+			<array>
+				<string>NSIndexSet</string>
+				<string>NSObject</string>
+			</array>
+			<key>$classname</key>
+			<string>NSIndexSet</string>
+		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>22</integer>
+			</dict>
+			<key>NS.keys</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>171</integer>
+				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>9</integer>
@@ -2578,11 +2627,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>168</integer>
+					<integer>172</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>170</integer>
+					<integer>174</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2608,7 +2657,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>169</integer>
+				<integer>173</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -2638,7 +2687,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>171</integer>
+				<integer>175</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -2657,14 +2706,14 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>173</integer>
+					<integer>177</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>174</integer>
+					<integer>178</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2690,11 +2739,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>175</integer>
+					<integer>179</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>238</integer>
+					<integer>244</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2708,7 +2757,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>176</integer>
+					<integer>180</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2720,22 +2769,6 @@
 			</dict>
 			<key>NS.keys</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>177</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>178</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>179</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>180</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>181</integer>
@@ -2848,13 +2881,6 @@
 					<key>CF$UID</key>
 					<integer>208</integer>
 				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>62</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>209</integer>
@@ -2871,14 +2897,9 @@
 					<key>CF$UID</key>
 					<integer>212</integer>
 				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>5</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>62</integer>
-				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>213</integer>
@@ -2898,6 +2919,10 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>217</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>5</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -2979,6 +3004,30 @@
 					<key>CF$UID</key>
 					<integer>237</integer>
 				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>238</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>239</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>240</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>241</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>242</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>243</integer>
+				</dict>
 			</array>
 		</dict>
 		<string>height</string>
@@ -3013,35 +3062,37 @@
 		<string>camIntrinsics7</string>
 		<string>camHandle3y</string>
 		<string>camHandle3x</string>
+		<integer>482</integer>
 		<real>0.0</real>
-		<real>664.2587890625</real>
+		<real>523.99090576171875</real>
 		<real>0.0</real>
 		<real>0.0</real>
+		<integer>642</integer>
 		<real>1</real>
-		<real>0.13100543618202209</real>
-		<real>0.3242567777633667</real>
+		<real>0.85712945461273193</real>
+		<real>0.81160658597946167</real>
 		<real>1</real>
 		<real>0.0</real>
-		<real>0.0034906871151179075</real>
+		<real>0.0014143837615847588</real>
 		<real>1</real>
 		<real>0.0</real>
-		<real>-0.011610122397542</real>
-		<real>657.867919921875</real>
+		<real>-0.0036804026458412409</real>
+		<real>523.883056640625</real>
 		<real>1</real>
-		<real>0.092733085155487061</real>
-		<real>0.82988327741622925</real>
+		<real>0.83132708072662354</real>
+		<real>0.2755284309387207</real>
 		<real>0.0</real>
-		<real>0.14262688159942627</real>
+		<real>0.17795757949352264</real>
 		<real>1</real>
-		<real>-0.25575822591781616</real>
-		<real>221.97636413574219</real>
-		<real>321.17831420898438</real>
-		<real>0.81278514862060547</real>
-		<real>0.88916963338851929</real>
+		<real>-0.39117363095283508</real>
+		<real>243.72120666503906</real>
+		<real>315.95556640625</real>
+		<real>0.40197309851646423</real>
+		<real>0.022457391023635864</real>
 		<real>0.0</real>
 		<real>0.0</real>
-		<real>0.31448638439178467</real>
-		<real>0.84907478094100952</real>
+		<real>0.92632299661636353</real>
+		<real>0.07905694842338562</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3052,7 +3103,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>239</integer>
+					<integer>245</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3066,31 +3117,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>182</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>240</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>241</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>242</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>243</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>244</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>245</integer>
+					<integer>186</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3132,13 +3159,6 @@
 					<key>CF$UID</key>
 					<integer>255</integer>
 				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>5</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>256</integer>
@@ -3162,6 +3182,13 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>261</integer>
+				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>5</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3202,6 +3229,30 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>271</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>272</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>273</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>274</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>275</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>276</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>277</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3247,43 +3298,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>273</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>274</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>275</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>276</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>277</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>278</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>279</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>280</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>167</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>9</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3293,13 +3312,41 @@
 					<key>CF$UID</key>
 					<integer>282</integer>
 				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>283</integer>
 				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>284</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>285</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>286</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>171</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>287</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>288</integer>
+				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>289</integer>
@@ -3310,7 +3357,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>300</integer>
+					<integer>301</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3322,15 +3369,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>313</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>318</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>323</integer>
+					<integer>319</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3338,11 +3381,19 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>325</integer>
+					<integer>329</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>330</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>331</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>337</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3356,50 +3407,6 @@
 		<string>maskBottom1</string>
 		<string>maskRight1</string>
 		<string>bgSubtractionEnabled1</string>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>285</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>288</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>14</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>286</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>287</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>284</integer>
-			</dict>
-		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<integer>7</integer>
-		<real>0.0</real>
-		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3439,11 +3446,11 @@
 				<integer>290</integer>
 			</dict>
 		</dict>
-		<real>10.039369583129883</real>
-		<integer>10</integer>
-		<integer>11</integer>
+		<real>0.0</real>
+		<real>0.0</real>
+		<integer>7</integer>
+		<real>0.0</real>
 		<real>1</real>
-		<real>15</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3460,7 +3467,7 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>299</integer>
+				<integer>300</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -3470,12 +3477,12 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>19</integer>
+				<integer>298</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>298</integer>
+				<integer>299</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -3483,10 +3490,11 @@
 				<integer>296</integer>
 			</dict>
 		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<real>0.0</real>
+		<real>10.039369583129883</real>
+		<integer>10</integer>
+		<integer>11</integer>
 		<real>1</real>
+		<real>15</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3498,7 +3506,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>302</integer>
+				<integer>303</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -3513,7 +3521,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>303</integer>
+				<integer>19</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -3523,14 +3531,13 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>301</integer>
+				<integer>302</integer>
 			</dict>
 		</dict>
-		<real>15.748031616210938</real>
 		<real>0.0</real>
-		<integer>16</integer>
 		<real>0.0</real>
-		<real>100</real>
+		<real>0.0</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3570,7 +3577,51 @@
 				<integer>307</integer>
 			</dict>
 		</dict>
-		<real>0.030303031206130981</real>
+		<real>15.748031616210938</real>
+		<real>0.0</real>
+		<integer>16</integer>
+		<real>0.0</real>
+		<real>100</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>314</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>317</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>14</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>315</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>316</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>313</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
 		<real>0.0</real>
 		<integer>9</integer>
 		<real>0.0</real>
@@ -3596,7 +3647,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>171</integer>
+				<integer>175</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -3615,12 +3666,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>315</integer>
+				<integer>321</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>317</integer>
+				<integer>323</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -3630,17 +3681,17 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>316</integer>
+				<integer>322</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>314</integer>
+				<integer>320</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -3658,12 +3709,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>320</integer>
+				<integer>326</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>322</integer>
+				<integer>328</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -3673,20 +3724,20 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>169</integer>
+				<integer>173</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>321</integer>
+				<integer>327</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>319</integer>
+				<integer>325</integer>
 			</dict>
 		</dict>
-		<real>0.055082071572542191</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -3759,12 +3810,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>327</integer>
+				<integer>333</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>330</integer>
+				<integer>336</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -3774,17 +3825,17 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>328</integer>
+				<integer>334</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>329</integer>
+				<integer>335</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>326</integer>
+				<integer>332</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -3803,12 +3854,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>333</integer>
+				<integer>339</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>335</integer>
+				<integer>341</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -3823,15 +3874,15 @@
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>334</integer>
+				<integer>340</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>332</integer>
+				<integer>338</integer>
 			</dict>
 		</dict>
-		<real>1</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -3845,14 +3896,14 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>173</integer>
+					<integer>177</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>337</integer>
+					<integer>343</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3866,7 +3917,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>338</integer>
+					<integer>344</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3880,14 +3931,14 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>339</integer>
+					<integer>345</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>340</integer>
+					<integer>346</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3902,42 +3953,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>341</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>342</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>343</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>344</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>345</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>346</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>347</integer>
-				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>332</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>296</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3945,11 +3961,46 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>314</integer>
+					<integer>349</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>349</integer>
+					<integer>350</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>351</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>352</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>353</integer>
+				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>73</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>302</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>354</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>320</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>355</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3957,7 +4008,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>350</integer>
+					<integer>356</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3970,7 +4021,7 @@
 		<string>threshold</string>
 		<real>1.0472074151039124</real>
 		<real>6.9190490245819092</real>
-		<real>10.222739726305008</real>
+		<real>7.9870343208312988</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3981,11 +4032,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>352</integer>
+					<integer>358</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>353</integer>
+					<integer>359</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3993,26 +4044,26 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>354</integer>
+					<integer>360</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>355</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>361</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>363</integer>
+					<integer>367</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>365</integer>
+					<integer>369</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>371</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4030,12 +4081,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>357</integer>
+				<integer>363</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>360</integer>
+				<integer>366</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -4045,17 +4096,17 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>358</integer>
+				<integer>364</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>359</integer>
+				<integer>365</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>356</integer>
+				<integer>362</integer>
 			</dict>
 		</dict>
 		<real>50</real>
@@ -4084,7 +4135,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>362</integer>
+				<integer>368</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -4114,7 +4165,7 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -4134,12 +4185,12 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>367</integer>
+				<integer>373</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>370</integer>
+				<integer>376</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
@@ -4149,17 +4200,17 @@
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>368</integer>
+				<integer>374</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>369</integer>
+				<integer>375</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>366</integer>
+				<integer>372</integer>
 			</dict>
 		</dict>
 		<real>0.071994912847876541</real>
@@ -4188,7 +4239,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>373</integer>
+					<integer>379</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4199,11 +4250,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>374</integer>
+					<integer>380</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>375</integer>
+					<integer>381</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4285,30 +4336,6 @@
 			</dict>
 			<key>NS.keys</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>378</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>379</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>380</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>381</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>382</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>383</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>384</integer>
@@ -4479,10 +4506,6 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>9</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>426</integer>
 				</dict>
 				<dict>
@@ -4501,13 +4524,37 @@
 					<key>CF$UID</key>
 					<integer>430</integer>
 				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>431</integer>
 				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>432</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>433</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>434</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>435</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>436</integer>
+				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>437</integer>
@@ -4518,7 +4565,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>448</integer>
+					<integer>449</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4538,11 +4585,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>477</integer>
+					<integer>478</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>481</integer>
+					<integer>483</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4558,7 +4605,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>500</integer>
+					<integer>505</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4566,7 +4613,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>508</integer>
+					<integer>512</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4582,7 +4629,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>527</integer>
+					<integer>532</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4598,7 +4645,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>550</integer>
+					<integer>551</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4622,11 +4669,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>585</integer>
+					<integer>586</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>590</integer>
+					<integer>591</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4662,7 +4709,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>643</integer>
+					<integer>644</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4670,7 +4717,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>650</integer>
+					<integer>655</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4702,7 +4749,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>693</integer>
+					<integer>698</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4710,7 +4757,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>701</integer>
+					<integer>705</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4718,7 +4765,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>712</integer>
+					<integer>713</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>718</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4786,50 +4837,6 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>433</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>436</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>434</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>435</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>432</integer>
-			</dict>
-		</dict>
-		<real>0.11023622006177902</real>
-		<real>0.0</real>
-		<integer>61</integer>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
 				<integer>439</integer>
 			</dict>
 			<key>maxVal</key>
@@ -4840,7 +4847,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -4860,7 +4867,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>58</integer>
+		<integer>61</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -4879,22 +4886,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>447</integer>
+				<integer>448</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>309</integer>
+				<integer>446</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>446</integer>
+				<integer>447</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -4902,8 +4909,9 @@
 				<integer>444</integer>
 			</dict>
 		</dict>
-		<real>0.65354329347610474</real>
 		<real>0.0</real>
+		<real>0.0</real>
+		<integer>58</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -4917,7 +4925,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>450</integer>
+				<integer>451</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -4927,12 +4935,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>451</integer>
+				<integer>315</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -4942,12 +4950,11 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>449</integer>
+				<integer>450</integer>
 			</dict>
 		</dict>
+		<real>1</real>
 		<real>0.0</real>
-		<real>0.0</real>
-		<integer>55</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -4971,7 +4978,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -4989,11 +4996,11 @@
 				<integer>455</integer>
 			</dict>
 		</dict>
-		<real>5.9291338920593262</real>
+		<real>1</real>
 		<real>0.0</real>
-		<integer>54</integer>
-		<real>-1</real>
-		<real>10</real>
+		<integer>55</integer>
+		<real>0.0</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5015,7 +5022,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5033,11 +5040,11 @@
 				<integer>461</integer>
 			</dict>
 		</dict>
+		<real>0.039370074868202209</real>
 		<real>0.0</real>
-		<real>0.0</real>
-		<integer>46</integer>
-		<real>0.0</real>
-		<real>1</real>
+		<integer>54</integer>
+		<real>-1</real>
+		<real>10</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5059,7 +5066,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5077,11 +5084,11 @@
 				<integer>467</integer>
 			</dict>
 		</dict>
-		<real>181.41732788085938</real>
 		<real>0.0</real>
-		<integer>37</integer>
 		<real>0.0</real>
-		<real>360</real>
+		<integer>46</integer>
+		<real>0.0</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5098,22 +5105,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>476</integer>
+				<integer>477</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>475</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>475</integer>
+				<integer>476</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5121,7 +5128,51 @@
 				<integer>473</integer>
 			</dict>
 		</dict>
-		<real>0.72440946102142334</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<integer>37</integer>
+		<real>0.0</real>
+		<real>360</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>480</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>482</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>298</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>481</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>479</integer>
+			</dict>
+		</dict>
+		<real>1</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -5136,27 +5187,27 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>478</integer>
+				<integer>484</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>480</integer>
+				<integer>486</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>479</integer>
+				<integer>485</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5178,50 +5229,6 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>483</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>486</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>484</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>485</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>482</integer>
-			</dict>
-		</dict>
-		<real>0.023622047156095505</real>
-		<real>0.0</real>
-		<integer>14</integer>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
 				<integer>489</integer>
 			</dict>
 			<key>maxVal</key>
@@ -5232,7 +5239,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5250,11 +5257,11 @@
 				<integer>488</integer>
 			</dict>
 		</dict>
-		<real>1.0708661079406738</real>
+		<real>0.38582676649093628</real>
 		<real>0.0</real>
-		<integer>19</integer>
+		<integer>14</integer>
 		<real>0.0</real>
-		<real>2</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5276,7 +5283,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5292,6 +5299,50 @@
 			<dict>
 				<key>CF$UID</key>
 				<integer>494</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<real>0.0</real>
+		<integer>19</integer>
+		<real>0.0</real>
+		<real>2</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>501</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>504</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>502</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>503</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>500</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -5315,12 +5366,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>169</integer>
+				<integer>173</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5339,32 +5390,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>502</integer>
+				<integer>508</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>505</integer>
+				<integer>511</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>503</integer>
+				<integer>509</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>504</integer>
+				<integer>510</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>501</integer>
+				<integer>507</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -5388,12 +5439,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>507</integer>
+				<integer>513</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5402,50 +5453,6 @@
 			</dict>
 		</dict>
 		<integer>15</integer>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>510</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>513</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>511</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>512</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>509</integer>
-			</dict>
-		</dict>
-		<real>0.78740155696868896</real>
-		<real>0.0</real>
-		<integer>52</integer>
-		<real>0.0</real>
-		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5467,7 +5474,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5487,9 +5494,9 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>59</integer>
+		<integer>52</integer>
 		<real>0.0</real>
-		<real>100</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5511,7 +5518,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5527,6 +5534,50 @@
 			<dict>
 				<key>CF$UID</key>
 				<integer>521</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<real>0.0</real>
+		<integer>59</integer>
+		<real>0.0</real>
+		<real>100</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>528</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>531</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>529</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>530</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>527</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -5550,12 +5601,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>328</integer>
+				<integer>334</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5563,50 +5614,6 @@
 				<integer>5</integer>
 			</dict>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>529</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>532</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>530</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>531</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>528</integer>
-			</dict>
-		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<integer>22</integer>
-		<real>0.0</real>
-		<real>30</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5628,7 +5635,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5648,9 +5655,9 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>64</integer>
+		<integer>22</integer>
 		<real>0.0</real>
-		<real>1</real>
+		<real>30</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5672,7 +5679,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5690,9 +5697,9 @@
 				<integer>540</integer>
 			</dict>
 		</dict>
-		<real>0.11811023950576782</real>
 		<real>0.0</real>
-		<integer>60</integer>
+		<real>0.0</real>
+		<integer>64</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -5711,22 +5718,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>549</integer>
+				<integer>550</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>162</integer>
+				<integer>548</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>548</integer>
+				<integer>549</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5734,9 +5741,10 @@
 				<integer>546</integer>
 			</dict>
 		</dict>
-		<real>0.16535437107086182</real>
 		<real>0.0</real>
-		<real>-1</real>
+		<real>0.0</real>
+		<integer>60</integer>
+		<real>0.0</real>
 		<real>1</real>
 		<dict>
 			<key>$class</key>
@@ -5749,7 +5757,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>552</integer>
+				<integer>553</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -5759,12 +5767,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>553</integer>
+				<integer>162</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -5774,13 +5782,12 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>551</integer>
+				<integer>552</integer>
 			</dict>
 		</dict>
-		<real>1</real>
+		<real>0.0078740119934082031</real>
 		<real>0.0</real>
-		<integer>36</integer>
-		<real>0.0</real>
+		<real>-1</real>
 		<real>1</real>
 		<dict>
 			<key>$class</key>
@@ -5803,7 +5810,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5823,7 +5830,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>21</integer>
+		<integer>36</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -5847,7 +5854,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5865,9 +5872,9 @@
 				<integer>563</integer>
 			</dict>
 		</dict>
-		<real>0.57480317354202271</real>
 		<real>0.0</real>
-		<integer>39</integer>
+		<real>0.0</real>
+		<integer>21</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -5891,7 +5898,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5911,7 +5918,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>23</integer>
+		<integer>39</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -5935,7 +5942,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -5953,9 +5960,9 @@
 				<integer>575</integer>
 			</dict>
 		</dict>
-		<real>1</real>
 		<real>0.0</real>
-		<integer>48</integer>
+		<real>0.0</real>
+		<integer>23</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -5974,22 +5981,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>584</integer>
+				<integer>585</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>14</integer>
+				<integer>583</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>583</integer>
+				<integer>584</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -5999,6 +6006,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
+		<integer>48</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -6010,37 +6018,37 @@
 			<key>controlType</key>
 			<integer>1</integer>
 			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>587</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>589</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>588</integer>
 			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>590</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>14</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>589</integer>
+			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>586</integer>
+				<integer>587</integer>
 			</dict>
 		</dict>
-		<real>1</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -6055,7 +6063,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>592</integer>
+				<integer>593</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -6065,12 +6073,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>593</integer>
+				<integer>297</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -6080,14 +6088,13 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>591</integer>
+				<integer>592</integer>
 			</dict>
 		</dict>
-		<real>13.779526710510254</real>
+		<real>1</real>
 		<real>0.0</real>
-		<integer>16</integer>
 		<real>0.0</real>
-		<real>50</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6109,7 +6116,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6127,11 +6134,11 @@
 				<integer>597</integer>
 			</dict>
 		</dict>
+		<real>13.779526710510254</real>
 		<real>0.0</real>
+		<integer>16</integer>
 		<real>0.0</real>
-		<integer>49</integer>
-		<real>0.0</real>
-		<real>1</real>
+		<real>50</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6153,7 +6160,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6171,9 +6178,9 @@
 				<integer>603</integer>
 			</dict>
 		</dict>
-		<real>0.094488188624382019</real>
 		<real>0.0</real>
-		<integer>62</integer>
+		<real>0.0</real>
+		<integer>49</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -6197,7 +6204,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6217,7 +6224,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>42</integer>
+		<integer>62</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -6241,7 +6248,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6261,7 +6268,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>18</integer>
+		<integer>42</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -6285,7 +6292,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6303,11 +6310,11 @@
 				<integer>621</integer>
 			</dict>
 		</dict>
-		<real>7.3228349685668945</real>
 		<real>0.0</real>
-		<integer>53</integer>
 		<real>0.0</real>
-		<real>10</real>
+		<integer>18</integer>
+		<real>0.0</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6329,7 +6336,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6347,11 +6354,11 @@
 				<integer>627</integer>
 			</dict>
 		</dict>
+		<real>7.3228349685668945</real>
 		<real>0.0</real>
+		<integer>53</integer>
 		<real>0.0</real>
-		<integer>50</integer>
-		<real>0.0</real>
-		<real>1</real>
+		<real>10</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6373,7 +6380,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6391,9 +6398,9 @@
 				<integer>633</integer>
 			</dict>
 		</dict>
-		<real>1</real>
 		<real>0.0</real>
-		<integer>56</integer>
+		<real>0.0</real>
+		<integer>50</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -6412,12 +6419,56 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>642</integer>
+				<integer>643</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>641</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>642</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>639</integer>
+			</dict>
+		</dict>
+		<real>1</real>
+		<real>0.0</real>
+		<integer>56</integer>
+		<real>0.0</real>
+		<real>1</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>646</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>648</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6427,15 +6478,15 @@
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>641</integer>
+				<integer>647</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>639</integer>
+				<integer>645</integer>
 			</dict>
 		</dict>
-		<real>0.24409449100494385</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -6450,32 +6501,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>645</integer>
+				<integer>651</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>648</integer>
+				<integer>654</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>646</integer>
+				<integer>652</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>647</integer>
+				<integer>653</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>644</integer>
+				<integer>650</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -6499,12 +6550,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>286</integer>
+				<integer>292</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -6512,50 +6563,6 @@
 				<integer>5</integer>
 			</dict>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>652</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>655</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>291</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>653</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>654</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>651</integer>
-			</dict>
-		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<integer>57</integer>
-		<real>0.0</real>
-		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6577,7 +6584,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6597,9 +6604,9 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>44</integer>
+		<integer>57</integer>
 		<real>0.0</real>
-		<real>10</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6621,7 +6628,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6641,9 +6648,9 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>17</integer>
+		<integer>44</integer>
 		<real>0.0</real>
-		<real>1</real>
+		<real>10</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6665,7 +6672,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6683,11 +6690,11 @@
 				<integer>669</integer>
 			</dict>
 		</dict>
-		<real>181.41732788085938</real>
+		<real>0.26771652698516846</real>
 		<real>0.0</real>
-		<integer>40</integer>
+		<integer>17</integer>
 		<real>0.0</real>
-		<real>360</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6709,7 +6716,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6729,9 +6736,9 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>47</integer>
+		<integer>40</integer>
 		<real>0.0</real>
-		<real>1</real>
+		<real>360</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6753,7 +6760,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6771,11 +6778,11 @@
 				<integer>681</integer>
 			</dict>
 		</dict>
-		<real>0.10000000149011612</real>
 		<real>0.0</real>
-		<integer>13</integer>
 		<real>0.0</real>
-		<real>0.10000000000000001</real>
+		<integer>47</integer>
+		<real>0.0</real>
+		<real>1</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -6797,7 +6804,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6813,6 +6820,50 @@
 			<dict>
 				<key>CF$UID</key>
 				<integer>687</integer>
+			</dict>
+		</dict>
+		<real>0.10000000149011612</real>
+		<real>0.0</real>
+		<integer>13</integer>
+		<real>0.0</real>
+		<real>0.10000000000000001</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>694</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>697</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>297</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>695</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>696</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>693</integer>
 			</dict>
 		</dict>
 		<real>1</real>
@@ -6836,7 +6887,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -6860,32 +6911,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>695</integer>
+				<integer>701</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>698</integer>
+				<integer>704</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>696</integer>
+				<integer>702</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>697</integer>
+				<integer>703</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>694</integer>
+				<integer>700</integer>
 			</dict>
 		</dict>
 		<real>0.5669291615486145</real>
@@ -6909,12 +6960,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>700</integer>
+				<integer>706</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -6934,32 +6985,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>703</integer>
+				<integer>709</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>706</integer>
+				<integer>712</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>704</integer>
+				<integer>710</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>705</integer>
+				<integer>711</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>702</integer>
+				<integer>708</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -6978,35 +7029,35 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>709</integer>
+				<integer>715</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>711</integer>
+				<integer>717</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>171</integer>
+				<integer>175</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>710</integer>
+				<integer>716</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>708</integer>
+				<integer>714</integer>
 			</dict>
 		</dict>
-		<real>1.2598425149917603</real>
+		<real>2</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>2</real>
@@ -7021,32 +7072,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>714</integer>
+				<integer>720</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>717</integer>
+				<integer>723</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>297</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>715</integer>
+				<integer>721</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>716</integer>
+				<integer>722</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>713</integer>
+				<integer>719</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -7075,39 +7126,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>720</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>721</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>722</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>723</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>724</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>725</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>726</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>727</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>407</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7119,23 +7142,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>9</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>380</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>730</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>731</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>423</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7147,7 +7158,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>385</integer>
+					<integer>413</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7157,20 +7168,56 @@
 					<key>CF$UID</key>
 					<integer>735</integer>
 				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>9</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>386</integer>
+				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>736</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>741</integer>
+					<integer>737</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>746</integer>
+					<integer>429</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>738</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>739</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>391</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>740</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>741</integer>
+				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>742</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>747</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7178,15 +7225,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>757</integer>
+					<integer>758</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>762</integer>
+					<integer>763</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>767</integer>
+					<integer>768</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7198,7 +7245,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>784</integer>
+					<integer>785</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7210,11 +7257,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>797</integer>
+					<integer>802</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>802</integer>
+					<integer>803</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7222,7 +7269,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>809</integer>
+					<integer>814</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7234,15 +7281,19 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>826</integer>
+					<integer>827</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>831</integer>
+					<integer>832</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>836</integer>
+					<integer>837</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>842</integer>
 				</dict>
 			</array>
 		</dict>
@@ -7273,17 +7324,17 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>738</integer>
+				<integer>744</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>740</integer>
+				<integer>746</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7293,56 +7344,13 @@
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>739</integer>
+				<integer>745</integer>
 			</dict>
 			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>737</integer>
-			</dict>
-		</dict>
-		<real>1</real>
-		<real>0.0</real>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>743</integer>
 			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>745</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>292</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>14</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>744</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>742</integer>
-			</dict>
 		</dict>
 		<real>1</real>
 		<real>0.0</real>
@@ -7359,7 +7367,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>748</integer>
+				<integer>749</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -7369,12 +7377,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>749</integer>
+				<integer>14</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -7384,12 +7392,11 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>747</integer>
+				<integer>748</integer>
 			</dict>
 		</dict>
+		<real>1</real>
 		<real>0.0</real>
-		<real>0.0</real>
-		<integer>24</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7408,22 +7415,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>756</integer>
+				<integer>757</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>755</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>755</integer>
+				<integer>756</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -7431,8 +7438,9 @@
 				<integer>753</integer>
 			</dict>
 		</dict>
-		<real>0.086614176630973816</real>
 		<real>0.0</real>
+		<real>0.0</real>
+		<integer>24</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7444,80 +7452,37 @@
 			<key>controlType</key>
 			<integer>1</integer>
 			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>759</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>761</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>292</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>309</integer>
-			</dict>
-			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>760</integer>
 			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>758</integer>
-			</dict>
-		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>764</integer>
-			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>766</integer>
+				<integer>762</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>298</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>765</integer>
+				<integer>761</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>763</integer>
+				<integer>759</integer>
 			</dict>
 		</dict>
-		<real>0.039370078593492508</real>
+		<real>0.0</real>
 		<real>0.0</real>
 		<real>0.0</real>
 		<real>1</real>
@@ -7532,7 +7497,50 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>769</integer>
+				<integer>765</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>767</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>298</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>315</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>766</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>764</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>1</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>770</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -7542,12 +7550,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>770</integer>
+				<integer>370</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -7557,12 +7565,11 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>768</integer>
+				<integer>769</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>25</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7586,7 +7593,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7604,9 +7611,9 @@
 				<integer>774</integer>
 			</dict>
 		</dict>
-		<real>0.031496062874794006</real>
 		<real>0.0</real>
-		<integer>13</integer>
+		<real>0.0</real>
+		<integer>25</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7625,22 +7632,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>783</integer>
+				<integer>784</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>169</integer>
+				<integer>782</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>782</integer>
+				<integer>783</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -7648,8 +7655,9 @@
 				<integer>780</integer>
 			</dict>
 		</dict>
-		<real>1</real>
 		<real>0.0</real>
+		<real>0.0</real>
+		<integer>13</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7663,7 +7671,7 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>786</integer>
+				<integer>787</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -7673,12 +7681,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>787</integer>
+				<integer>173</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -7688,12 +7696,11 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>785</integer>
+				<integer>786</integer>
 			</dict>
 		</dict>
-		<real>0.16535432636737823</real>
+		<real>1</real>
 		<real>0.0</real>
-		<integer>23</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7717,7 +7724,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7733,6 +7740,50 @@
 			<dict>
 				<key>CF$UID</key>
 				<integer>791</integer>
+			</dict>
+		</dict>
+		<real>0.16535432636737823</real>
+		<real>0.0</real>
+		<integer>23</integer>
+		<real>0.0</real>
+		<real>1</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>798</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>801</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>298</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>799</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>800</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>797</integer>
 			</dict>
 		</dict>
 		<real>0.42519685626029968</real>
@@ -7756,7 +7807,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7780,32 +7831,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>799</integer>
+				<integer>805</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>801</integer>
+				<integer>807</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>171</integer>
+				<integer>175</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>800</integer>
+				<integer>806</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>798</integer>
+				<integer>804</integer>
 			</dict>
 		</dict>
 		<real>1</real>
@@ -7823,32 +7874,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>804</integer>
+				<integer>810</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>807</integer>
+				<integer>813</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>805</integer>
+				<integer>811</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>806</integer>
+				<integer>812</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>803</integer>
+				<integer>809</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -7872,7 +7923,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7896,50 +7947,6 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>811</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>814</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>292</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>812</integer>
-			</dict>
-			<key>minVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>813</integer>
-			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>810</integer>
-			</dict>
-		</dict>
-		<real>0.0</real>
-		<real>0.0</real>
-		<integer>21</integer>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
 				<integer>817</integer>
 			</dict>
 			<key>maxVal</key>
@@ -7950,7 +7957,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -7970,7 +7977,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
-		<integer>27</integer>
+		<integer>21</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -7989,22 +7996,22 @@
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>825</integer>
+				<integer>826</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>328</integer>
+				<integer>824</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>824</integer>
+				<integer>825</integer>
 			</dict>
 			<key>value</key>
 			<dict>
@@ -8014,6 +8021,7 @@
 		</dict>
 		<real>0.0</real>
 		<real>0.0</real>
+		<integer>27</integer>
 		<real>0.0</real>
 		<real>1</real>
 		<dict>
@@ -8025,77 +8033,34 @@
 			<key>controlType</key>
 			<integer>1</integer>
 			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>828</integer>
-			</dict>
-			<key>maxVal</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>830</integer>
-			</dict>
-			<key>midiChannel</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>292</integer>
-			</dict>
-			<key>midiNumber</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>286</integer>
-			</dict>
-			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>829</integer>
 			</dict>
-			<key>value</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>827</integer>
-			</dict>
-		</dict>
-		<real>1</real>
-		<real>0.0</real>
-		<real>0.0</real>
-		<real>1</real>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>17</integer>
-			</dict>
-			<key>controlType</key>
-			<integer>1</integer>
-			<key>defvalue</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>833</integer>
-			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>835</integer>
+				<integer>831</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>291</integer>
+				<integer>334</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>834</integer>
+				<integer>830</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>832</integer>
+				<integer>828</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -8113,7 +8078,50 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>838</integer>
+				<integer>834</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>836</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>298</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>292</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>835</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>833</integer>
+			</dict>
+		</dict>
+		<real>1</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>1</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>839</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
@@ -8123,12 +8131,12 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>292</integer>
+				<integer>298</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>839</integer>
+				<integer>297</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
@@ -8138,7 +8146,50 @@
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>837</integer>
+				<integer>838</integer>
+			</dict>
+		</dict>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>0.0</real>
+		<real>1</real>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>17</integer>
+			</dict>
+			<key>controlType</key>
+			<integer>1</integer>
+			<key>defvalue</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>844</integer>
+			</dict>
+			<key>maxVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>847</integer>
+			</dict>
+			<key>midiChannel</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>298</integer>
+			</dict>
+			<key>midiNumber</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>845</integer>
+			</dict>
+			<key>minVal</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>846</integer>
+			</dict>
+			<key>value</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>843</integer>
 			</dict>
 		</dict>
 		<real>1</real>
@@ -8167,7 +8218,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>844</integer>
+					<integer>850</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -8175,23 +8226,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>845</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>846</integer>
-				</dict>
-			</array>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>847</integer>
+					<integer>851</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>852</integer>
 				</dict>
+			</array>
+			<key>NS.objects</key>
+			<array>
 				<dict>
 					<key>CF$UID</key>
 					<integer>853</integer>
@@ -8199,6 +8242,14 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>858</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>859</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>864</integer>
 				</dict>
 			</array>
 		</dict>
@@ -8216,32 +8267,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>849</integer>
+				<integer>855</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>851</integer>
+				<integer>857</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>19</integer>
+				<integer>175</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>850</integer>
+				<integer>856</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>848</integer>
+				<integer>854</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -8264,7 +8315,7 @@
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
@@ -8288,32 +8339,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>855</integer>
+				<integer>861</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>857</integer>
+				<integer>863</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>14</integer>
+				<integer>162</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>856</integer>
+				<integer>862</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>854</integer>
+				<integer>860</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -8331,32 +8382,32 @@
 			<key>defvalue</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>860</integer>
+				<integer>866</integer>
 			</dict>
 			<key>maxVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>862</integer>
+				<integer>868</integer>
 			</dict>
 			<key>midiChannel</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>364</integer>
+				<integer>370</integer>
 			</dict>
 			<key>midiNumber</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>162</integer>
+				<integer>173</integer>
 			</dict>
 			<key>minVal</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>861</integer>
+				<integer>867</integer>
 			</dict>
 			<key>value</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>859</integer>
+				<integer>865</integer>
 			</dict>
 		</dict>
 		<real>0.0</real>
@@ -8380,7 +8431,7 @@
 		<key>BlobLightCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>842</integer>
+			<integer>848</integer>
 		</dict>
 		<key>BlobLightEnabled</key>
 		<dict>
@@ -8390,12 +8441,12 @@
 		<key>BlobLightProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>719</integer>
+			<integer>725</integer>
 		</dict>
 		<key>BlobTracker2dCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>336</integer>
+			<integer>342</integer>
 		</dict>
 		<key>BlobTracker2dEnabled</key>
 		<dict>
@@ -8405,12 +8456,12 @@
 		<key>BlobTracker2dProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>272</integer>
+			<integer>278</integer>
 		</dict>
 		<key>CameraCalibrationCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>172</integer>
+			<integer>176</integer>
 		</dict>
 		<key>CameraCalibrationEnabled</key>
 		<dict>
@@ -8420,7 +8471,7 @@
 		<key>CameraCalibrationProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>166</integer>
+			<integer>170</integer>
 		</dict>
 		<key>CamerasCustomProperties</key>
 		<dict>
@@ -8440,7 +8491,7 @@
 		<key>FluidsCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>718</integer>
+			<integer>724</integer>
 		</dict>
 		<key>FluidsEnabled</key>
 		<dict>
@@ -8450,7 +8501,7 @@
 		<key>FluidsProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>377</integer>
+			<integer>383</integer>
 		</dict>
 		<key>KeystonerCustomProperties</key>
 		<dict>
@@ -8470,7 +8521,7 @@
 		<key>MidiCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>376</integer>
+			<integer>382</integer>
 		</dict>
 		<key>MidiEnabled</key>
 		<dict>
@@ -8480,7 +8531,7 @@
 		<key>MidiProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>372</integer>
+			<integer>378</integer>
 		</dict>
 		<key>SelectionPath</key>
 		<dict>
@@ -8490,7 +8541,7 @@
 		<key>TestCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>863</integer>
+			<integer>869</integer>
 		</dict>
 		<key>TestEnabled</key>
 		<dict>
@@ -8500,12 +8551,12 @@
 		<key>TestProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>843</integer>
+			<integer>849</integer>
 		</dict>
 		<key>TrackerCustomProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>371</integer>
+			<integer>377</integer>
 		</dict>
 		<key>TrackerEnabled</key>
 		<dict>
@@ -8515,7 +8566,7 @@
 		<key>TrackerProperties</key>
 		<dict>
 			<key>CF$UID</key>
-			<integer>351</integer>
+			<integer>357</integer>
 		</dict>
 	</dict>
 	<key>$version</key>

@@ -22,9 +22,9 @@
     
     [self addPropB:@"clear"];
 
-    [self addPropF:@"fillFrontR"];
-    [self addPropF:@"fillFrontG"];
-    [self addPropF:@"fillFrontB"];
+    [[self addPropF:@"fillFrontR"] setMidiSmoothing:0.9];
+    [[self addPropF:@"fillFrontG"] setMidiSmoothing:0.9];
+    [[self addPropF:@"fillFrontB"] setMidiSmoothing:0.9];
     
     [self addPropF:@"fillBackR"];
     [self addPropF:@"fillBackG"];
@@ -32,6 +32,8 @@
     
     [self addPropF:@"top"];
     [self addPropF:@"height"];
+    
+        [self addPropF:@"maskRight"];
 }
 
 //
@@ -108,6 +110,8 @@
 //
 
 -(void)draw:(NSDictionary *)drawingInformation{
+
+    
     ApplySurface(@"Floor"){
         ofEnableAlphaBlending();
         glBlendFunc(GL_ONE, GL_ONE);

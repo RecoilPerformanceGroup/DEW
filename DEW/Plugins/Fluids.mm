@@ -4,6 +4,8 @@
 #import <ofxCocoaPlugins/Tracker.h>
 #import <ofxCocoaPlugins/BlobTracker2d.h>
 
+#define OPTICALFLOW_REVERSE -1
+
 @implementation Fluids
 @synthesize controlMouseColor;
 @synthesize controlMouseColorEnabled;
@@ -52,6 +54,7 @@
     [[self addPropF:@"generateFallingFluids"] setMaxValue:2];
     [[self addPropF:@"generateFallingFluidsHeight"] setMaxValue:1];
     [self addPropF:@"generateStartLight"];
+    [self addPropF:@"generateStartLightCount"];
     
     [[self addPropF:@"postGain"] setMinValue:-1 maxValue:10.0]; 
     
@@ -77,6 +80,8 @@
     
     [self addPropF:@"maskTrackingBack"];
     [self addPropF:@"maskTrackingFront"];
+    
+    [[self addPropF:@"maskRight"] setMidiSmoothing:0.9];
     
 }
 
@@ -467,7 +472,7 @@
                         pos.y += OVERFLOW_TOP / ((float)OVERFLOW_TOTAL+FLUIDS_HEIGHT);
                         //*((float)FLUIDS_HEIGHT/((float)OVERFLOW_TOTAL+FLUIDS_HEIGHT)
                         
-                        fluids->addForceAtPos(pos, -Vec2f(f.x,f.y)*opticalFlowForce);
+                        fluids->addForceAtPos(pos, OPTICALFLOW_REVERSE * Vec2f(f.x,f.y)*opticalFlowForce);
                     }
                 }
             }
@@ -548,14 +553,14 @@
     if(generateFallingFluids){
         fallingFluidsPos = (sin((ofGetElapsedTimeMillis()/1000.0)/generateFallingFluids)+1)/2.0 + ofRandom(-0.1,0.1);
         for(int i=-5;i<5;i++){
-            fluids->addColorAtPos(Vec2f(fallingFluidsPos+i*1.0/fluids->getWidth(),0.25*PropF(@"generateFallingFluidsHeight")), c);
+            fluids->addColorAtPos(Vec2f(0.1+0.8*fallingFluidsPos+i*1.0/fluids->getWidth(),0.25*PropF(@"generateFallingFluidsHeight")), c);
         }
         
     }
     
     //------------- generateStartLight ---------
     CachePropF(generateStartLight);
-    int startLightCount = 100;
+    int startLightCount = 100*PropF(@"generateStartLightCount");
     if(generateStartLight){
         float _distance = generateStartLight*0.8;
         for(int i=0;i<startLightCount;i++){
@@ -571,11 +576,14 @@
             float fOffsetX = 1.0/fluids->getWidth();
             float fOffsetY = 1.0/fluids->getHeight();
             
-            fluids->addColorAtPos(startLight[i].pos-Vec2f(fOffsetX,0), c);
-            fluids->addColorAtPos(startLight[i].pos-Vec2f(0,fOffsetY), c);
-            fluids->addColorAtPos(startLight[i].pos, c);
-            fluids->addColorAtPos(startLight[i].pos+Vec2f(fOffsetX,0), c);
-            fluids->addColorAtPos(startLight[i].pos+Vec2f(0,fOffsetY), c);
+            
+            if(startLight[i].pos.x > 0 && startLight[i].pos.x < 1 && startLight[i].pos.y > 0 && startLight[i].pos.y < 1){
+                fluids->addColorAtPos(startLight[i].pos-Vec2f(fOffsetX,0), c);
+                fluids->addColorAtPos(startLight[i].pos-Vec2f(0,fOffsetY), c);
+                fluids->addColorAtPos(startLight[i].pos, c);
+                fluids->addColorAtPos(startLight[i].pos+Vec2f(fOffsetX,0), c);
+                fluids->addColorAtPos(startLight[i].pos+Vec2f(0,fOffsetY), c);
+            }
         }
     }
     
@@ -792,6 +800,17 @@
             }
         } PopSurface();
     }
+    
+    
+    
+    if(PropF(@"maskRight")){
+        ApplySurface(@"Floor"){
+            ofFill();
+            ofSetColor(0, 0, 0);
+            ofRect(1, 0, -PropF(@"maskRight"), 1);
+        } PopSurface();
+    }
+    
     
     ofSetColor(255, 255, 255);
     
